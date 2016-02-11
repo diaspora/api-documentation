@@ -9,7 +9,20 @@
       </button>
       <a class="navbar-brand" href="{{ site.baseurl }}/index.html">diaspora* API</a>
     </div>
+
     <div id="navbar" class="navbar-collapse collapse">
+
+      <ul class="visible-xs nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">General <span class="caret"></span></a>
+          {% include page_tree.html ulclasses="dropdown-menu" %}
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Routes <span class="caret"></span></a>
+          {% include route_tree.html ulclasses="dropdown-menu" %}
+        </li>
+      </ul>
+
       <ul class="nav navbar-nav navbar-right">
         <li><a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">License (CC BY-SA 4.0)</a></li>
         <li><a href="{{ site.repourl }}" target="_blank">Contribute</a></li>
