@@ -1,5 +1,5 @@
 <ul class="{{ include.ulclasses | default: "nav nav-pills nav-stacked" }}">
   {% for route in site.routes %}
-    <li><a href="{{ site.baseurl }}{{ route.url }}">{{ route.title }}</a></li>
+    <li class="{% include active_class.html url=route.url %}"><a href="{{ site.baseurl }}{{ route.url }}">{{ route.title }}</a></li>
   {% endfor %}
 </ul>

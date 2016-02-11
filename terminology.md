@@ -1,5 +1,0 @@
----
-title: Terminology
----
-
-Insert contents.
