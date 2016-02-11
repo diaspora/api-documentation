@@ -1,0 +1,40 @@
+---
+---
+
+@import "_pygments.scss";
+
+.container-fluid {
+  max-width: 1200px;
+}
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  .nav-header {
+    margin-left: 15px;
+    margin-top: 25px;
+  }
+}
+
+.docbody {
+  h1:first-child {
+    margin-top: 0;
+  }
+
+  pre {
+    max-height: 400px;
+
+    code {
+      overflow: auto;
+      white-space: pre;
+      word-wrap: normal;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<nav class="sidebar">
+  <ul class="nav nav-pills nav-stacked">
+    <li><a href="{{ site.baseurl }}/index.html">Overview</a></li>
+    <li><a href="{{ site.baseurl }}/terminology.html">Used terms</a></li>
+    <li><a href="{{ site.baseurl }}/authentication.html">Authentication</a></li>
+  </ul>
+
+  <h4 class="nav-header">Routes</h4>
+  <ul class="nav nav-pills nav-stacked">
+    {% for route in site.routes %}
+      <li><a href="{{ site.baseurl }}{{ route.url }}">{{ route.title }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

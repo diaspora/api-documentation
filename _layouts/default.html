@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% capture page_title %}
+      {% if page.title %}
+        {{ page.title }} - diaspora* API
+      {% else %}
+        diaspora* API
+      {% endif %}
+    {% endcapture %}
+    <title>{{ page_title | strip }}</title>
+
+    <link href="{{ site.baseurl }}/assets/vendor/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
+
+    <script src="{{ site.baseurl }}/assets/vendor/js/jquery-2.2.0.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/vendor/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      {% include top_navbar.html %}
+
+      <div class="row">
+        <div class="col-sm-3">
+          {% include page_tree.html %}
+        </div>
+        <div class="col-sm-9 docbody">
+          {% if page.title %}
+            <h1>{{ page.title }}</h1>
+          {% endif %}
+
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

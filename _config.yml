@@ -1,0 +1,23 @@
+baseurl: https://denschub.github.io/diaspora-api-documentation
+repourl: https://github.com/denschub/diaspora-api-documentation
+
+exclude:
+  - .*
+  - LICENSE
+  - README.md
+
+sass:
+  sass_dir: assets/css
+  style: nested
+  deploy_style: nested
+
+collections:
+  routes:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
