@@ -2,14 +2,16 @@
 ---
 
 @import "_pygments.scss";
+@import "_webfonts.scss";
 
 .container-fluid {
   max-width: 1200px;
 }
 
 body {
-  padding-top: 20px;
+  font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .navbar {
@@ -32,6 +34,7 @@ body {
     max-height: 400px;
 
     code {
+      font-family: "Fira Mono", monospace, monospace;
       overflow: auto;
       white-space: pre;
       word-wrap: normal;
