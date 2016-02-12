@@ -24,6 +24,8 @@ Accept: application/json
 
 If, for some reason, setting the `accept` header is not possible, adding `.json` to the call url will also work.
 
+Unless otherwise noted, bodies submitted via `POST` requests should be JSON encoded.
+
 ## API support
 
 This document specifies API Version 0, which is supported by diaspora\* release X and newer. Version discovery should be done using [nodeinfo][nodeinfo] prior to making any requests to ensure the endpoints are available. If a compatible diaspora\* version was detected once, it is safe to assume a pod will stay compatible.
