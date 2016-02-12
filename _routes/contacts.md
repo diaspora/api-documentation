@@ -11,7 +11,7 @@ Contacts are always managed inside [aspects][aspects].
 ### Request
 
 ~~~
-GET /api/v1/aspects/:id/contacts
+GET /api/v1/aspects/:aspect_id/contacts
 ~~~
 
 ### Response
@@ -24,7 +24,7 @@ GET /api/v1/aspects/:id/contacts
 ### Request
 
 ~~~
-PUT /api/v1/aspects/:id/contacts/:user_guid
+PUT /api/v1/aspects/:aspect_id/contacts/:user_guid
 ~~~
 
 ### Response
@@ -37,7 +37,7 @@ PUT /api/v1/aspects/:id/contacts/:user_guid
 ### Request
 
 ~~~
-DELETE /api/v1/aspects/:id/contacts/:user_guid
+DELETE /api/v1/aspects/:aspect_id/contacts/:user_guid
 ~~~
 
 ### Response
