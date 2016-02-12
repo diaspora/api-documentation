@@ -15,6 +15,9 @@ collections:
   routes:
     output: true
 
+kramdown:
+  toc_levels: 2..2
+
 defaults:
   -
     scope:
