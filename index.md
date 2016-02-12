@@ -6,13 +6,13 @@
     <h3 class="panel-title">This is API fiction!</h3>
   </div>
   <div class="panel-body">
-    This document aims to provide an <strong>API proposal</strong> as a base of discussion for further progress towards a stable and well-designed API for diaspora*. Please note that this is only a propsal and none of the endpoints are implemented at the moment.
+    This document aims to provide an <strong>API proposal</strong> as a base for discussion for further progress towards a stable and well-designed API for diaspora*. Please note that this is only a proposal and none of the endpoints are implemented at the moment.
   </div>
 </div>
 
 # diaspora\* API documentation
 
-diaspora\* aims to offer an sophisticated API for most social networking applications. Because of our decentralized nature, some things might be a little bit different than at most other API implementations, especially regarding authentication. If you experience any issues, feel free to [get in touch][communication] with us.
+diaspora\* aims to offer a sophisticated API for most social networking applications. Because of our decentralized nature, some things might be a little bit different than at most other API implementations, especially regarding authentication. If you experience any issues, feel free to [get in touch][communication] with us.
 
 ## Media Types
 

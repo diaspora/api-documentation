@@ -1,6 +1,6 @@
 # diaspora\* API documentation
 
-This document aims to provide an **API proposal** as a base of discussion for further progress towards a stable and well-designed API for diaspora\*. Please note that this is only a proposal and none of the endpoints are implemented at the moment.
+This document aims to provide an **API proposal** as a base for discussion for further progress towards a stable and well-designed API for diaspora\*. Please note that this is only a proposal and none of the endpoints are implemented at the moment.
 
 ## Contributing
 
