@@ -6,8 +6,6 @@ diaspora\* supports the required set of [OpenID Connect Core 1.0][connect] using
 
 Please note that, although a brief description about the authentication flow will follow, implementers should refer to the official OpenID specification documents when implementing the protocol or use a supported library.
 
-All data submitted via `POST` requests to OpenID endpoints should be `application/x-www-form-urlencoded`.
-
 ## OpenID endpoint discovery
 
 OpenID endpoints can be discovered using [OpenID Connect Discovery 1.0][discovery]. In addition to all required endpoints, the response will also include available scopes and other information.
@@ -86,9 +84,13 @@ The registration endpoint can be discovered as mentioned above. The response inc
 ~~~
 POST http://example.com/api/openid_connect/clients
 ~~~
-~~~
-redirect_uris[]=http://example.com/
-&client_name=ExampleApp
+~~~json
+{
+  "client_name": "ExampleApp",
+  "redirect_uris": [
+    "http://example.com/"
+  ]
+}
 ~~~
 
 ### Response
