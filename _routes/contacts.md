@@ -24,7 +24,7 @@ GET /api/v1/aspects/:aspect_id/contacts
 ### Request
 
 ~~~
-PUT /api/v1/aspects/:aspect_id/contacts/:user_guid
+PUT /api/v1/aspects/:aspect_id/contacts/:person_guid
 ~~~
 
 ### Response
@@ -37,7 +37,7 @@ PUT /api/v1/aspects/:aspect_id/contacts/:user_guid
 ### Request
 
 ~~~
-DELETE /api/v1/aspects/:aspect_id/contacts/:user_guid
+DELETE /api/v1/aspects/:aspect_id/contacts/:person_guid
 ~~~
 
 ### Response

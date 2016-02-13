@@ -88,7 +88,7 @@ PATCH /api/v1/aspects/:id
 ### Request
 
 ~~~
-DELETE /api/v1/aspects/:id
+DELETE /api/v1/aspects/:aspect_id
 ~~~
 
 ### Response
