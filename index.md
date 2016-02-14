@@ -1,14 +1,10 @@
 ---
 ---
 
-<div class="panel panel-warning">
-  <div class="panel-heading">
-    <h3 class="panel-title">This is API fiction!</h3>
-  </div>
-  <div class="panel-body">
-    This document aims to provide an <strong>API proposal</strong> as a base for discussion for further progress towards a stable and well-designed API for diaspora*. Please note that this is only a proposal and none of the endpoints are implemented at the moment.
-  </div>
-</div>
+{% include warning_box.html
+   title="This is API fiction!"
+   content="This document aims to provide an <strong>API proposal</strong> as a base for discussion for further progress towards a stable and well-designed API for diaspora*. Please note that this is only a proposal and none of the endpoints are implemented at the moment."
+%}
 
 # diaspora\* API documentation
 

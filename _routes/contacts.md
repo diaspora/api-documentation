@@ -17,6 +17,7 @@ GET /api/v1/aspects/:aspect_id/contacts
 ### Response
 
 ~~~json
+{}
 ~~~
 
 ## Add an user to an aspect
@@ -30,6 +31,7 @@ PUT /api/v1/aspects/:aspect_id/contacts/:person_guid
 ### Response
 
 ~~~json
+{}
 ~~~
 
 ## Remove an user from an aspect
