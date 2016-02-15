@@ -35,7 +35,6 @@ GET /api/v1/streams/aspects
 | Parameter  | Description                      |
 | ---------- | -------------------------------- |
 | aspect_ids | List of one or more `aspect_id`s |
-{: .table .table-striped}
 
 ### Response
 

@@ -25,7 +25,6 @@ GET /api/v1/search/user
 | -------------- | ------------------------------------------------ |
 | name_or_handle | Part or entire profile name or diaspora\* handle |
 | tag            | A tag that the person is tagged with             |
-{: .table .table-striped}
 
 ### Response
 
@@ -48,7 +47,6 @@ GET /api/v1/search/posts
 | Parameter | Description                        |
 | --------- | ---------------------------------- |
 | tag       | A tag that the post has to contain |
-{: .table .table-striped}
 
 ### Response
 
