@@ -26,5 +26,20 @@ Unless otherwise noted, bodies submitted via `POST` requests should be JSON enco
 
 This document specifies API Version 1, which is supported by diaspora\* release X and newer. Version discovery should be done using [nodeinfo][nodeinfo] prior to making any requests to ensure the endpoints are available. If a compatible diaspora\* version was detected once, it is safe to assume a pod will stay compatible.
 
+## ToDo
+
+### Missing routes/methods
+
+* Tag followings
+* Inviting people
+* Post interactions
+  * Subscribe
+  * Ignore post
+  * Mute notifications
+  * Report
+* Comment interactions
+  * Report comment
+* Posts by a user
+
 [communication]: https://wiki.diasporafoundation.org/How_we_communicate
 [nodeinfo]: http://nodeinfo.diaspora.software/
