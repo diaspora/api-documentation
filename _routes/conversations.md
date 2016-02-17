@@ -17,7 +17,7 @@ GET /api/v1/conversations
 ~~~json
 ~~~
 
-## Get information about a conversation
+## Get information about a single conversation
 
 ### Request
 
