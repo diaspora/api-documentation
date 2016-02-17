@@ -104,7 +104,7 @@ GET /api/v1/posts/:post_guid/reshares
 ### Request
 
 ~~~
-POST /api/v1/:post_guid/comments
+POST /api/v1/posts/:post_guid/comments
 ~~~
 ~~~json
 ~~~
@@ -119,7 +119,7 @@ POST /api/v1/:post_guid/comments
 ### Request
 
 ~~~
-POST /api/v1/:post_guid/like
+POST /api/v1/posts/:post_guid/like
 ~~~
 
 ### Response
@@ -132,7 +132,7 @@ POST /api/v1/:post_guid/like
 ### Request
 
 ~~~
-POST /api/v1/:post_guid/reshare
+POST /api/v1/posts/:post_guid/reshare
 ~~~
 
 ### Response
