@@ -59,3 +59,35 @@ POST /api/v1/posts/:post_guid/report
 ~~~
 Status: 204 No Content
 ~~~
+
+## Subscribe to a post
+
+The current user will receive notifications for subscribed posts without adding a like or comment.
+
+### Request
+
+~~~
+POST /api/v1/posts/:post_guid/subscribe
+~~~
+
+### Response
+
+~~~
+Status: 204 No Content
+~~~
+
+## Mute a post
+
+The current user will not receive any notifications for this post, even if a comment or like was added.
+
+### Request
+
+~~~
+POST /api/v1/posts/:post_guid/mute
+~~~
+
+### Response
+
+~~~
+Status: 204 No Content
+~~~

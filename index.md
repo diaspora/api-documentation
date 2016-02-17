@@ -33,9 +33,7 @@ This document specifies API Version 1, which is supported by diaspora\* release 
 * Tag followings
 * Inviting people
 * Post interactions
-  * Subscribe
   * Ignore post
-  * Mute notifications
 * Posts by a user
 
 [communication]: https://wiki.diasporafoundation.org/How_we_communicate
