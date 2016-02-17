@@ -37,8 +37,6 @@ This document specifies API Version 1, which is supported by diaspora\* release 
   * Ignore post
   * Mute notifications
   * Report
-* Comment interactions
-  * Report comment
 * Posts by a user
 
 [communication]: https://wiki.diasporafoundation.org/How_we_communicate
