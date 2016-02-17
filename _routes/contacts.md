@@ -1,5 +1,7 @@
 ---
 title: Contacts
+see_also:
+  - aspects
 ---
 
 Contacts are always managed inside [aspects][aspects].

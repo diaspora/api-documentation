@@ -1,5 +1,9 @@
 ---
 title: Posts
+see_also:
+  - comments
+  - likes
+  - post_interactions
 ---
 
 {% include toc.md %}

@@ -1,8 +1,10 @@
 ---
 title: Post interactions
+see_also:
+  - comments
+  - likes
+  - posts
 ---
-
-Also see [comments][comments], [likes][likes] and [reshares][reshares].
 
 {% include toc.md %}
 

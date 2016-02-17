@@ -1,5 +1,7 @@
 ---
 title: Aspects
+see_also:
+  - contacts
 ---
 
 Contact groups are called aspects in diaspora\*. Check [the contacts routes][contacts] for information on how to manage contacts within aspects.
