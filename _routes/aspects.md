@@ -20,15 +20,11 @@ GET /api/v1/aspects
 [
   {
     "id": 1,
-    "name": "Family",
-    "contacts_visible": true,
-    "chat_enabled": true
+    "name": "Family"
   },
   {
     "id": 2,
-    "name": "Friends",
-    "contacts_visible": true,
-    "chat_enabled": false
+    "name": "Friends"
   }
 ]
 ~~~
