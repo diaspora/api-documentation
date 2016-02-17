@@ -45,3 +45,17 @@ DELETE /api/v1/posts/:post_guid
 ~~~
 Status: 204 No Content
 ~~~
+
+## Report a post
+
+### Request
+
+~~~
+POST /api/v1/posts/:post_guid/report
+~~~
+
+### Response
+
+~~~
+Status: 204 No Content
+~~~
