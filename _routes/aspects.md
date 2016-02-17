@@ -33,6 +33,25 @@ GET /api/v1/aspects
 ]
 ~~~
 
+## Get information about an aspect
+
+### Request
+
+~~~
+GET /api/v1/aspects/:aspect_id
+~~~
+
+### Response
+
+~~~json
+{
+  "id": 1,
+  "name": "Family",
+  "contacts_visible": true,
+  "chat_enabled": true
+}
+~~~
+
 ## Create new aspect
 
 ### Request
