@@ -46,38 +46,12 @@ DELETE /api/v1/posts/:post_guid
 Status: 204 No Content
 ~~~
 
-## Get likes for a single post
-
-### Request
-
-~~~
-GET /api/v1/posts/:post_guid/likes
-~~~
-
-### Response
-
-~~~json
-~~~
-
 ## Get reshares for a single post
 
 ### Request
 
 ~~~
 GET /api/v1/posts/:post_guid/reshares
-~~~
-
-### Response
-
-~~~json
-~~~
-
-## Like a post
-
-### Request
-
-~~~
-POST /api/v1/posts/:post_guid/likes
 ~~~
 
 ### Response
