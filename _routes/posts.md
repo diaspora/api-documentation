@@ -119,7 +119,7 @@ POST /api/v1/posts/:post_guid/comments
 ### Request
 
 ~~~
-POST /api/v1/posts/:post_guid/like
+POST /api/v1/posts/:post_guid/likes
 ~~~
 
 ### Response
@@ -132,7 +132,7 @@ POST /api/v1/posts/:post_guid/like
 ### Request
 
 ~~~
-POST /api/v1/posts/:post_guid/reshare
+POST /api/v1/posts/:post_guid/reshares
 ~~~
 
 ### Response
