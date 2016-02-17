@@ -31,7 +31,6 @@ This document specifies API Version 1, which is supported by diaspora\* release 
 ### Missing routes/methods
 
 * Tag followings
-* Inviting people
 * Posts by a user
 
 [communication]: https://wiki.diasporafoundation.org/How_we_communicate
