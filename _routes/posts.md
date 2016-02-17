@@ -91,3 +91,19 @@ POST /api/v1/posts/:post_guid/mute
 ~~~
 Status: 204 No Content
 ~~~
+
+## Hide a post
+
+The given post will be excluded from all streams and search results.
+
+### Request
+
+~~~
+POST /api/v1/posts/:post_guid/hide
+~~~
+
+### Response
+
+~~~
+Status: 204 No Content
+~~~
