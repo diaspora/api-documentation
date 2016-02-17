@@ -4,6 +4,7 @@ see_also:
   - comments
   - likes
   - post_interactions
+  - reshares
 ---
 
 {% include toc.md %}
