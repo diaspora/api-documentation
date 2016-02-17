@@ -22,7 +22,7 @@ GET /api/v1/conversations
 ### Request
 
 ~~~
-GET /api/v1/conversations/:conversation_id
+GET /api/v1/conversations/:conversation_guid
 ~~~
 
 ### Response
@@ -48,7 +48,7 @@ POST /api/v1/conversations
 ### Request
 
 ~~~
-DELETE /api/v1/conversations/:conversation_id
+DELETE /api/v1/conversations/:conversation_guid
 ~~~
 
 ### Response
@@ -62,7 +62,7 @@ Status: 204 No Content
 ### Request
 
 ~~~
-GET /api/v1/conversations/:conversation_id/messages
+GET /api/v1/conversations/:conversation_guid/messages
 ~~~
 
 ### Response
@@ -75,7 +75,7 @@ GET /api/v1/conversations/:conversation_id/messages
 ### Request
 
 ~~~
-POST /api/v1/conversations/:conversation_id/messages
+POST /api/v1/conversations/:conversation_guid/messages
 ~~~
 
 ### Response
