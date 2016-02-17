@@ -25,7 +25,7 @@ Please note that the amount of information you retrieve from this request depend
 ### Request
 
 ~~~
-GET /api/v1/:person_guid
+GET /api/v1/users/:person_guid
 ~~~
 
 ### Response

@@ -64,7 +64,7 @@ POST /api/v1/aspects
 ### Request
 
 ~~~
-PATCH /api/v1/aspects/:id
+PATCH /api/v1/aspects/:aspect_id
 ~~~
 ~~~json
 {

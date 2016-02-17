@@ -16,7 +16,7 @@ Contains users that matches the selected criteria. Please note that, at this mom
 ### Request
 
 ~~~
-GET /api/v1/search/user
+GET /api/v1/search/users
 ~~~
 
 ### Parameters (one required)
