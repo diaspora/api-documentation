@@ -18,7 +18,7 @@ Currently, the API only supports JSON data exchange, so all requests should have
 Accept: application/json
 ~~~
 
-If, for some reason, setting the `accept` header is not possible, adding `.json` to the call url will also work.
+If, for some reason, setting the `accept` header is not possible, adding `.json` to the call URL will also work.
 
 Unless otherwise noted, bodies submitted via `POST` requests should be JSON encoded. Parameters to `GET` routes are simple request URL variables.
 

@@ -60,7 +60,7 @@ GET /api/v1/streams/activity
 
 ##  Get mentions stream
 
-Contains all posts in which mentioned the currently authenticated user, ordered by their creation timestamp.
+Contains all posts in which mentioned the currently authenticated user, ordered by their creation time stamp.
 
 ### Request
 

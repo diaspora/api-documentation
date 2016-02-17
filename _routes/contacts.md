@@ -20,7 +20,7 @@ GET /api/v1/aspects/:aspect_id/contacts
 {}
 ~~~
 
-## Add an user to an aspect
+## Add a user to an aspect
 
 ### Request
 
@@ -34,7 +34,7 @@ PUT /api/v1/aspects/:aspect_id/contacts/:person_guid
 {}
 ~~~
 
-## Remove an user from an aspect
+## Remove a user from an aspect
 
 ### Request
 

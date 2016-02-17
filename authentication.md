@@ -4,7 +4,7 @@ title: Authentication
 
 diaspora\* supports the required set of [OpenID Connect Core 1.0][connect] using either the Authorization Code Flow or the Implicit Flow. OpenID endpoints can be discovered using [OpenID Connect Discovery 1.0][discovery]. Since diaspora\* is decentralized and a manual application registration on a single node is not sufficient, diaspora\* supports [OpenID Connect Dynamic Client Registration 1.0][client-registration].
 
-Please note that, although a brief description about the authentication flow will follow, implementers should refer to the official OpenID specification documents when implementing the protocol or use a supported library.
+Please note that, although a brief description about the authentication flow will follow, implementations should refer to the official OpenID specification documents when implementing the protocol or use a supported library.
 
 ## OpenID endpoint discovery
 
