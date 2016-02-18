@@ -4,7 +4,7 @@ This document aims to provide an **API proposal** as a base for discussion for f
 
 ## Contributing
 
-This is an very early draft and at this point, Contribution is not really a thing. This will get updated as soon as we are sure what we want.
+See [our contribution guide](/CONTRIBUTING.md) for more information on how to contribute to the diaspora\* API.
 
 ## License
 
