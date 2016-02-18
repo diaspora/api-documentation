@@ -27,7 +27,7 @@ GET /api/v1/aspects/:aspect_id/contacts
 ### Request
 
 ~~~
-PUT /api/v1/aspects/:aspect_id/contacts/:person_guid
+POST /api/v1/aspects/:aspect_id/contacts/:person_guid
 ~~~
 
 ### Response
