@@ -3,7 +3,6 @@ title: Post interactions
 see_also:
   - comments
   - likes
-  - posts
   - reshares
 ---
 
