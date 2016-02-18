@@ -39,7 +39,7 @@ GET /api/v1/notifications/:notification_id
 ### Request
 
 ~~~
-PUT /api/v1/notifications/:notification_id
+PATCH /api/v1/notifications/:notification_id
 ~~~
 ~~~json
 {
