@@ -15,6 +15,7 @@ GET /api/v1/notifications
 ### Response
 
 ~~~json
+{}
 ~~~
 
 ## Get information about a single notification
@@ -30,6 +31,7 @@ GET /api/v1/notifications/:notification_id
 ### Response
 
 ~~~json
+{}
 ~~~
 
 ## Mark a notification as unread
@@ -48,4 +50,5 @@ PUT /api/v1/notifications/:notification_id
 ### Response
 
 ~~~json
+{}
 ~~~

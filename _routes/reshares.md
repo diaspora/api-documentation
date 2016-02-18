@@ -15,6 +15,7 @@ GET /api/v1/posts/:post_guid/reshares
 ### Response
 
 ~~~json
+{}
 ~~~
 
 ## Reshare a post
@@ -28,4 +29,5 @@ POST /api/v1/posts/:post_guid/reshares
 ### Response
 
 ~~~json
+{}
 ~~~

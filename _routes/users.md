@@ -64,4 +64,3 @@ GET /api/v1/users/:person_guid/posts
 ~~~json
 {}
 ~~~
-

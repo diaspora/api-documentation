@@ -15,6 +15,7 @@ GET /api/v1/posts/:post_guid/likes
 ### Response
 
 ~~~json
+{}
 ~~~
 
 ## Like a post
@@ -28,6 +29,7 @@ POST /api/v1/posts/:post_guid/likes
 ### Response
 
 ~~~json
+{}
 ~~~
 
 ## Unlike a post

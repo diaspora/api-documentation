@@ -15,6 +15,7 @@ GET /api/v1/tag_followings
 ### Response
 
 ~~~json
+{}
 ~~~
 
 ## Follow a tag
@@ -24,10 +25,14 @@ GET /api/v1/tag_followings
 ~~~
 POST /api/v1/tag_followings
 ~~~
+~~~json
+{}
+~~~
 
 ### Response
 
 ~~~json
+{}
 ~~~
 
 ## Unfollow a tag

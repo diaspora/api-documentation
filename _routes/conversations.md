@@ -15,6 +15,7 @@ GET /api/v1/conversations
 ### Response
 
 ~~~json
+{}
 ~~~
 
 ## Get information about a single conversation
@@ -28,6 +29,7 @@ GET /api/v1/conversations/:conversation_guid
 ### Response
 
 ~~~json
+{}
 ~~~
 
 ## Create new conversation
@@ -37,10 +39,14 @@ GET /api/v1/conversations/:conversation_guid
 ~~~
 POST /api/v1/conversations
 ~~~
+~~~json
+{}
+~~~
 
 ### Response
 
 ~~~json
+{}
 ~~~
 
 ## Ignore and hide a conversation
@@ -68,6 +74,7 @@ GET /api/v1/conversations/:conversation_guid/messages
 ### Response
 
 ~~~json
+{}
 ~~~
 
 ## Post new message to a conversation
@@ -77,8 +84,12 @@ GET /api/v1/conversations/:conversation_guid/messages
 ~~~
 POST /api/v1/conversations/:conversation_guid/messages
 ~~~
+~~~json
+{}
+~~~
 
 ### Response
 
 ~~~json
+{}
 ~~~

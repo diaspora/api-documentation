@@ -15,6 +15,7 @@ GET /api/v1/posts/:post_guid/comments
 ### Response
 
 ~~~json
+{}
 ~~~
 
 ## Delete a comment
@@ -53,10 +54,11 @@ Status: 204 No Content
 POST /api/v1/posts/:post_guid/comments
 ~~~
 ~~~json
+{}
 ~~~
 
 ### Response
 
 ~~~json
+{}
 ~~~
-

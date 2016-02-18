@@ -20,6 +20,7 @@ GET /api/v1/posts/:post_guid
 ### Response
 
 ~~~json
+{}
 ~~~
 
 ## Publish a post
@@ -30,11 +31,13 @@ GET /api/v1/posts/:post_guid
 POST /api/v1/posts
 ~~~
 ~~~json
+{}
 ~~~
 
 ### Response
 
 ~~~json
+{}
 ~~~
 
 ## Delete a post
