@@ -32,7 +32,7 @@ GET /api/v1/streams/aspects
 
 ### Optional parameters
 
-| Parameter  | Description                      |
+| Name       | Description                      |
 | ---------- | -------------------------------- |
 | aspect_ids | List of one or more `aspect_id`s |
 

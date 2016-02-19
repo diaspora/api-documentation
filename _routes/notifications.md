@@ -27,7 +27,7 @@ GET /api/v1/notifications
 
 ### Optional parameters
 
-| Parameter   | Description                                                            |
+| Name        | Description                                                            |
 | ----------- | ---------------------------------------------------------------------- |
 | only_after  | If set, only notifications updated after the given time will be shown. |
 | only_unread | If true, the response will only contain unread notifications.          |
