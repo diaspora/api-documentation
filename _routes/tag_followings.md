@@ -15,7 +15,11 @@ GET /api/v1/tag_followings
 ### Response
 
 ~~~json
-{}
+[
+  "api",
+  "development",
+  "diaspora"
+]
 ~~~
 
 ## Follow a tag
@@ -23,16 +27,13 @@ GET /api/v1/tag_followings
 ### Request
 
 ~~~
-POST /api/v1/tag_followings
-~~~
-~~~json
-{}
+POST /api/v1/tag_followings/:tag_name
 ~~~
 
 ### Response
 
-~~~json
-{}
+~~~
+Status: 204 No Content
 ~~~
 
 ## Unfollow a tag
@@ -40,7 +41,7 @@ POST /api/v1/tag_followings
 ### Request
 
 ~~~
-DELETE /api/v1/tag_followings/:tag_following_id
+DELETE /api/v1/tag_followings/:tag_name
 ~~~
 
 ### Response
