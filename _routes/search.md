@@ -29,7 +29,20 @@ GET /api/v1/search/users
 ### Response
 
 ~~~json
-{}
+[
+  {
+    "guid": "cb7e4aa0b82f0133e40d406c8f31e210",
+    "diaspora_id": "bob@example.com",
+    "name": "Bob Testing",
+    "avatar": "http://example.com/uploads/images/thumb_medium_a51bf501fe86c198c0b1.jpg"
+  },
+  {
+    "guid": "83de2fc0b8cc0133e40d406c8f31e210",
+    "diaspora_id": "trent@example.com",
+    "name": "Trent Bob Testing",
+    "avatar": "http://example.com/uploads/images/thumb_medium_8894c7a0b8cc0133e40d.jpg"
+  }
+]
 ~~~
 
 ## Search for posts
