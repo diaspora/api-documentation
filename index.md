@@ -31,7 +31,7 @@ Unless otherwise noted, bodies submitted via `POST` requests should be JSON enco
 
 ## Pagination
 
-Some responses, especially those with large response sets or with a larger server load, might respond in a paginated way. Paginated responses will contain a `Link` header with URIs to load additional pages/sets:
+Some responses, especially those with large response sets or with a larger server load, might respond in a paginated way. Paginated responses will contain a `Link` header with URLs to load additional pages/sets:
 
 ~~~
 Link: <https://example.com/api/v1/example?page=2>; rel="next",
@@ -40,7 +40,7 @@ Link: <https://example.com/api/v1/example?page=2>; rel="next",
 
 *Note*: Line breaks were added to increase the readability, the actual header will not contain line breaks.
 
-`first`, `next`, `previous` and `last` are possible `rel`-values. Please **do not try to guess the pagination URLs**, some resources like streams, might use timestamps or GUIDs instead of a increasing page counter.
+`first`, `next`, `previous` and `last` are possible `rel`-values. Please **do not try to guess the pagination URLs**, some resources like streams, might use timestamps or GUIDs instead of an increasing page counter.
 
 ## API support
 
