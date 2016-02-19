@@ -12,6 +12,13 @@ title: Conversations
 GET /api/v1/conversations
 ~~~
 
+### Optional parameters
+
+| Parameter   | Description                                                            |
+| ----------- | ---------------------------------------------------------------------- |
+| only_after  | If set, only conversations updated after the given time will be shown. |
+| only_unread | If true, the response will only contain unread conversations.          |
+
 ### Response
 
 ~~~json
@@ -20,6 +27,7 @@ GET /api/v1/conversations
     "guid": "3ffe3620b89b0133e40c406c8f31e210",
     "subject": "Look, I found a kitten",
     "created_at": "2016-02-18T18:27:54.554Z",
+    "read": false,
     "participants": [
       {
         "guid": "f50ffc00b188013355e3705681972339",
@@ -39,6 +47,7 @@ GET /api/v1/conversations
     "guid": "59804e90b8cc0133e40d406c8f31e210",
     "subject": "Our meeting tomorrow",
     "created_at": "2016-02-19T00:19:35.154Z",
+    "read": true,
     "participants": [
       {
         "guid": "f50ffc00b188013355e3705681972339",
@@ -78,6 +87,7 @@ GET /api/v1/conversations/:conversation_guid
   "guid": "59804e90b8cc0133e40d406c8f31e210",
   "subject": "Our meeting tomorrow",
   "created_at": "2016-02-19T00:19:35.154Z",
+  "read": true,
   "participants": [
     {
       "guid": "f50ffc00b188013355e3705681972339",
@@ -164,6 +174,12 @@ Status: 204 No Content
 ~~~
 GET /api/v1/conversations/:conversation_guid/messages
 ~~~
+
+### Optional parameters
+
+| Parameter   | Description                                                       |
+| ----------- | ----------------------------------------------------------------- |
+| only_after  | If set, only messages created after the given time will be shown. |
 
 ### Response
 
