@@ -22,6 +22,13 @@ If, for some reason, setting the `accept` header is not possible, adding `.json`
 
 Unless otherwise noted, bodies submitted via `POST` requests should be JSON encoded. Parameters to `GET` routes are simple request URL variables.
 
+## Value formats
+
+| Type      | Description                              | Example                            |
+| --------- | ---------------------------------------- | ---------------------------------- |
+| GUID      | A network-wide, unique identifier.       | `298962a0b8dc0133e40d406c8f31e210` |
+| timestamp | An ISO 8601 time and date with timezone. | `2016-02-19T02:13:41.863Z`         |
+
 ## API support
 
 This document specifies API Version 1, which is supported by diaspora\* release X and newer. Version discovery should be done using [nodeinfo][nodeinfo] prior to making any requests to ensure the endpoints are available. If a compatible diaspora\* version was detected once, it is safe to assume a pod will stay compatible.
