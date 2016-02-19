@@ -4,7 +4,7 @@ title: Notifications
 
 {% include toc.md %}
 
-Possible notification types:
+**Possible notification types**:
 
 | Type            | Description                                                     |
 | --------------- | --------------------------------------------------------------- |

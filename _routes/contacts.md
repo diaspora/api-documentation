@@ -4,8 +4,6 @@ see_also:
   - aspects
 ---
 
-Contacts are always managed inside [aspects][aspects].
-
 {% include toc.md %}
 
 ## Get list of contacts in an aspect

@@ -4,8 +4,6 @@ see_also:
   - contacts
 ---
 
-Contact groups are called aspects in diaspora\*. Check [the contacts routes][contacts] for information on how to manage contacts within aspects.
-
 {% include toc.md %}
 
 ## Get lists of aspects
