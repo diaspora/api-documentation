@@ -25,7 +25,7 @@ GET /api/v1/posts/:post_guid/comments
       "name": "Alice Testing",
       "avatar": "http://example.com/uploads/images/thumb_medium_83abe5319ef830c2bd84.jpg"
     },
-    "text": "What a wonderful post!"
+    "body": "What a wonderful post!"
   },
   {
     "guid": "9d164700b82f0133e40d406c8f31e210",
@@ -36,7 +36,7 @@ GET /api/v1/posts/:post_guid/comments
       "name": "Bob Testing",
       "avatar": "http://example.com/uploads/images/thumb_medium_a51bf501fe86c198c0b1.jpg"
     },
-    "text": "Thank you very much, Alice!"
+    "body": "Thank you very much, Alice!"
   }
 ]
 ~~~
@@ -85,7 +85,7 @@ POST /api/v1/posts/:post_guid/comments
 ~~~
 ~~~json
 {
-  "text": "Can I use these for my own website?"
+  "body": "Can I use these for my own website?"
 }
 ~~~
 
@@ -101,6 +101,6 @@ POST /api/v1/posts/:post_guid/comments
     "name": "Alice Testing",
     "avatar": "http://example.com/uploads/images/thumb_medium_83abe5319ef830c2bd84.jpg"
   },
-  "text": "Can I use these for my own website?"
+  "body": "Can I use these for my own website?"
 }
 ~~~
