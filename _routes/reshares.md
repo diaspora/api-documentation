@@ -39,6 +39,8 @@ GET /api/v1/posts/:post_guid/reshares
 
 ## Reshare a post
 
+Resharing is effectively creating a new post, which is why this method returns a post object.
+
 ### Request
 
 ~~~
@@ -47,6 +49,36 @@ POST /api/v1/posts/:post_guid/reshares
 
 ### Response
 
-~~~
-Status: 204 No Content
+~~~json
+{
+  "guid": "0a992a10b9db0133e40e406c8f31e210",
+  "created_at": "2016-02-20T05:41:40.289Z",
+  "post_type": "Reshare",
+  "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a di...",
+  "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.",
+  "provider_display_name": "ExampleApp",
+  "public": true,
+  "nsfw": false,
+  "root": {
+    "guid": "72af1170b9b60133e40e406c8f31e210",
+    "created_at": "2016-02-20T04:15:21.213Z",
+    "author": {
+      "guid": "83de2fc0b8cc0133e40d406c8f31e210",
+      "diaspora_id": "trent@example.com",
+      "name": "Trent Testing",
+      "avatar": "http://example.com/uploads/images/thumb_medium_8894c7a0b8cc0133e40d.jpg"
+    }
+  }
+  "author": {
+    "guid": "f50ffc00b188013355e3705681972339",
+    "diaspora_id": "alice@example.com",
+    "name": "Alice Testing",
+    "avatar": "http://example.com/uploads/images/thumb_medium_83abe5319ef830c2bd84.jpg"
+  },
+  "interaction_counters": {
+    "comments": 0,
+    "likes": 0,
+    "reshares": 0
+  }
+}
 ~~~
