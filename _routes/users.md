@@ -123,7 +123,10 @@ GET /api/v1/users/:person_guid
     "development",
     "diaspora"
   ],
-  "relationship": "mutual",
+  "relationship": {
+    "receiving": true,
+    "sharing": false
+  },
   "aspects": [
     {
       "id": 1,
@@ -132,16 +135,6 @@ GET /api/v1/users/:person_guid
   ]
 }
 ~~~
-
-### Possible relationship states
-
-| State       | Description                                                            |
-| ----------- | ---------------------------------------------------------------------- |
-| mutual      | Both the current and the selected user are sharing with each other.    |
-| not_sharing | No relationship between the current user and the selected user exists. |
-| receiving   | The selected user is sharing with the current user.                    |
-| sharing     | The current user is sharing with the selected user.                    |
-
 
 ## Get contacts from a single user
 
