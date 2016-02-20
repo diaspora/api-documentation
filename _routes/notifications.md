@@ -15,7 +15,7 @@ title: Notifications
 | reshared        | Someone reshared one of the current user's posts.               |
 | started_sharing | Someone started sharing with the current user.                  |
 
-"Someone" is defined in `event_creators` which represents one or more user profile. All types, excluding `started_sharing` will include a `target_guid` (in the list route) or `target` (in the single-notification route) identifying the post the event was created at.
+"Someone" is defined in `event_creators` which represents one or more user profiles. All types, excluding `started_sharing` will include a `target_guid` (in the list route) or `target` (in the single-notification route) identifying the post the event was created at.
 
 ## Get list of all notifications
 
@@ -77,7 +77,7 @@ GET /api/v1/notifications
 
 ## Get information about a single notification
 
-Note: This also marks the given notification as read.
+*Note*: This also marks the given notification as read.
 
 ### Request
 

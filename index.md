@@ -14,17 +14,17 @@
 
 # diaspora\* API documentation
 
-diaspora\* aims to offer a sophisticated API for most social networking applications. Because of our decentralized nature, some things might be a little bit different than at most other API implementations, especially regarding authentication. If you experience any issues, feel free to [get in touch][communication] with us.
+diaspora\* aims to offer a sophisticated API for most social networking applications. Because of our decentralized nature, some things might be a little bit different than most other API implementations, especially regarding authentication. If you experience any issues, feel free to [get in touch][communication] with us.
 
 ## Media Types
 
-Currently, the API only supports JSON data exchange, so all requests should have their `accept` header set correctly:
+Currently, the API only supports JSON data exchange, so all requests should have their `Accept` header set correctly:
 
 ~~~
 Accept: application/json
 ~~~
 
-If, for some reason, setting the `accept` header is not possible, adding `.json` to the call URL will also work.
+If, for some reason, setting the `Accept` header is not possible, adding `.json` to the call URL will also work.
 
 Unless otherwise noted, bodies submitted via `POST` requests should be JSON encoded. Parameters to `GET` routes are simple request URL variables.
 
@@ -46,7 +46,7 @@ Link: <https://example.com/api/v1/example?page=2>; rel="next",
 
 *Note*: Line breaks were added to increase the readability, the actual header will not contain line breaks.
 
-`first`, `next`, `previous` and `last` are possible `rel`-values. Please **do not try to guess the pagination URLs**, some resources like streams, might use timestamps or GUIDs instead of an increasing page counter.
+`first`, `previous`, `next` and `last` are possible `rel`-values. Please **do not try to guess the pagination URLs**, some resources like streams, might use timestamps or GUIDs instead of an increasing page counter.
 
 ## API support
 

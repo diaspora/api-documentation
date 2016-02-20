@@ -94,7 +94,7 @@ PATCH /api/v1/user
 
 ## Get information about a single user
 
-Please note that the amount of information you retrieve from this request depends on whether the requested person shares with the authenticated user or not.
+Please note that the amount of information you retrieve from this request depends on whether the requested person shares with the currently authenticated user or not.
 
 ### Request
 

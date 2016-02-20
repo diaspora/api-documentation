@@ -125,7 +125,7 @@ POST /api/v1/conversations
     "f50ffc00b188013355e3705681972339",
     "cb7e4aa0b82f0133e40d406c8f31e210"
   ],
-  "body": "Hey Alice, hey bob!\nThanks for the **nice** visit yesterday. Since you both enjoyed the chocolate cake I made for us, here is the recipe so you can have one, too!"
+  "body": "Hey Alice, hey bob!\nThanks for the **nice** visit yesterday. Since you both enjoyed the chocolate cake I made for us, here is the recipe so you can make one, too!"
 }
 ~~~
 
@@ -169,7 +169,7 @@ Status: 204 No Content
 
 ## List messages in a conversation
 
-Note: This also marks the given conversation as read.
+*Note*: This also marks the given conversation as read.
 
 ### Request
 

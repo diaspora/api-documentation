@@ -20,10 +20,10 @@ GET /api/v1/search/users
 
 ### Parameters (one required)
 
-| Name           | Type   | Description                                      |
-| -------------- | ------ | ------------------------------------------------ |
-| name_or_handle | string | Part or entire profile name or diaspora\* handle |
-| tag            | string | A tag that the person is tagged with             |
+| Name           | Type   | Description                                       |
+| -------------- | ------ | ------------------------------------------------- |
+| name_or_handle | string | Part or entire profile name or diaspora\* handle. |
+| tag            | string | A tag that the person is tagged with.             |
 
 ### Response
 
@@ -56,9 +56,9 @@ GET /api/v1/search/posts
 
 ### Parameters (one required)
 
-| Name | Type   | Description                        |
-| ---- | ------ | ---------------------------------- |
-| tag  | string | A tag that the post has to contain |
+| Name | Type   | Description                         |
+| ---- | ------ | ----------------------------------- |
+| tag  | string | A tag that the post has to contain. |
 
 ### Response
 

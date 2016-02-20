@@ -16,7 +16,7 @@ Posts can contain a wide range of additional contents besides the basic body tex
 
 ### Available post types and Reshares
 
-The `post_type` field in a response could either be `StatusMessage` or `Reshare`. A `StatusMessage` contains available post content fields. A `Reshare` also contains all available content fields, but an additional `root` object with information about the original post author and source. An interface displaying reshares should make clear that the resharing person is not the author of the contents. In addition to the post fields, the reshare's `root` objects looks like the following:
+The `post_type` field in a response could either be `StatusMessage` or `Reshare`. A `StatusMessage` contains available post content fields. A `Reshare` also contains all available content fields, but an additional `root` object with information about the original post author and source. An interface displaying reshares should make clear that the resharing person is not the author of the contents. In addition to the post fields, the reshare's `root` object looks like this:
 
 ~~~json
 {
@@ -53,7 +53,7 @@ Mentioned people will be included in a separate array for advanced displaying. A
 
 ### Photos
 
-One or more photos could be attached to a post. Images are provided in multiple resolutions, so bandwidth usage can get optimized.
+One or more photos can be attached to a post. Images are provided in multiple resolutions, so bandwidth usage can be optimized.
 
 | Name   | Max. resolution   |
 | ------ | ----------------- |
@@ -92,7 +92,7 @@ One or more photos could be attached to a post. Images are provided in multiple 
 
 ### Polls
 
-One poll with two or more questions can be attached to a post. A user can participate only once. A `poll` object inside the `post` object looks like:
+One poll with two or more questions can be attached to a post. A user can participate only once. A `poll` object inside the `post` object looks like this:
 
 ~~~json
 {
