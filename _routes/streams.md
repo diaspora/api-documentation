@@ -74,9 +74,9 @@ GET /api/v1/streams/aspects
 
 ### Optional parameters
 
-| Name       | Description                      |
-| ---------- | -------------------------------- |
-| aspect_ids | List of one or more `aspect_id`s |
+| Name       | Type  | Description                      |
+| ---------- | ----- | -------------------------------- |
+| aspect_ids | array | List of one or more `aspect_id`s |
 
 ### Response
 

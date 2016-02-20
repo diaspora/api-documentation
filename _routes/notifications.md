@@ -27,11 +27,11 @@ GET /api/v1/notifications
 
 ### Optional parameters
 
-| Name        | Description                                                            |
-| ----------- | ---------------------------------------------------------------------- |
-| only_after  | If set, only notifications updated after the given time will be shown. |
-| only_unread | If true, the response will only contain unread notifications.          |
-| type        | Only show notifications with the specified type.                       |
+| Name        | Type      | Description                                                            |
+| ----------- | --------- | ---------------------------------------------------------------------- |
+| only_after  | timestamp | If set, only notifications updated after the given time will be shown. |
+| only_unread | timestamp | If true, the response will only contain unread notifications.          |
+| type        | string    | Only show notifications with the specified type.                       |
 
 ### Response
 

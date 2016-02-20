@@ -14,10 +14,10 @@ GET /api/v1/conversations
 
 ### Optional parameters
 
-| Name        | Description                                                            |
-| ----------- | ---------------------------------------------------------------------- |
-| only_after  | If set, only conversations updated after the given time will be shown. |
-| only_unread | If true, the response will only contain unread conversations.          |
+| Name        | Type    | Description                                                            |
+| ----------- | ------- | ---------------------------------------------------------------------- |
+| only_after  | boolean | If set, only conversations updated after the given time will be shown. |
+| only_unread | boolean | If true, the response will only contain unread conversations.          |
 
 ### Response
 
@@ -177,9 +177,9 @@ GET /api/v1/conversations/:conversation_guid/messages
 
 ### Optional parameters
 
-| Parameter   | Description                                                       |
-| ----------- | ----------------------------------------------------------------- |
-| only_after  | If set, only messages created after the given time will be shown. |
+| Name       | Type    | Description                                                       |
+| ---------- | ------- | ----------------------------------------------------------------- |
+| only_after | boolean | If set, only messages created after the given time will be shown. |
 
 ### Response
 
