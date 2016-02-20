@@ -68,7 +68,7 @@ POST /api/v1/posts/:post_guid/reshares
       "name": "Trent Testing",
       "avatar": "http://example.com/uploads/images/thumb_medium_8894c7a0b8cc0133e40d.jpg"
     }
-  }
+  },
   "author": {
     "guid": "f50ffc00b188013355e3705681972339",
     "diaspora_id": "alice@example.com",
