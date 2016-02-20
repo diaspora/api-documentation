@@ -3,7 +3,13 @@
 
 {% include warning_box.html
    title="This is API fiction!"
-   content="This document aims to provide an <strong>API proposal</strong> as a base for discussion for further progress towards a stable and well-designed API for diaspora*. Please note that this is only a proposal and none of the endpoints are implemented at the moment."
+   content="<p>This document aims to provide an <strong>API proposal</strong> as a base for discussion for further progress towards a stable and well-designed API for diaspora*. Please note that this is only a proposal and none of the endpoints are implemented at the moment.</p>
+
+<p>ToDo:</p>
+
+<ul>
+  <li>Error codes and messages</li>
+</ul>"
 %}
 
 # diaspora\* API documentation
