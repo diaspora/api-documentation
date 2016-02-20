@@ -169,6 +169,8 @@ Status: 204 No Content
 
 ## List messages in a conversation
 
+Note: This also marks the given conversation as read.
+
 ### Request
 
 ~~~
