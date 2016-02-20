@@ -197,3 +197,42 @@ GET /api/v1/users/:person_guid/posts
   }
 ]
 ~~~
+
+## Get photos by a single user
+
+### Request
+
+~~~
+GET /api/v1/users/:person_guid/photos
+~~~
+
+### Response
+
+~~~json
+[
+  {
+    "guid": "0a992a10b9db0133e40e406c8f31e210",
+    "dimensions": {
+      "height": 1200,
+      "width": 1600
+    },
+    "sizes": {
+      "large": "http://example.com/uploads/images/scaled_full_f6ce0597695a878c4663.jpg",
+      "medium": "http://example.com/uploads/images/thumb_medium_f6ce0597695a878c4663.jpg",
+      "small": "http://example.com/uploads/images/thumb_small_f6ce0597695a878c4663.jpg"
+    }
+  },
+  {
+    "guid": "114999c0b9db0133e40e406c8f31e210",
+    "dimensions": {
+      "height": 1200,
+      "width": 1600
+    },
+    "sizes": {
+      "large": "http://example.com/uploads/images/scaled_full_c384f99eda7f19dfe78c.jpg",
+      "medium": "http://example.com/uploads/images/thumb_medium_c384f99eda7f19dfe78c.jpg",
+      "small": "http://example.com/uploads/images/thumb_small_c384f99eda7f19dfe78c.jpg"
+    }
+  }
+]
+~~~
