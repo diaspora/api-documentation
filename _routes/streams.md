@@ -64,7 +64,7 @@ GET /api/v1/streams/main
 
 ## Get aspect stream
 
-Contains all posts in some or all aspects. If `aspect_ids` is empty, all aspect will get considered.
+Contains all posts in some or all aspects. If `aspect_ids` is empty, all aspects are considered.
 
 ### Request
 
@@ -74,9 +74,9 @@ GET /api/v1/streams/aspects
 
 ### Optional parameters
 
-| Name       | Type  | Description                      |
-| ---------- | ----- | -------------------------------- |
-| aspect_ids | array | List of one or more `aspect_id`s |
+| Name       | Type  | Description                       |
+| ---------- | ----- | --------------------------------- |
+| aspect_ids | array | List of one or more `aspect_id`s. |
 
 ### Response
 
@@ -84,7 +84,7 @@ See [Main Stream Response example](#response).
 
 ## Get activity stream
 
-Contains all posts on which the authenticated user interacted on, ordered by their last activity.
+Contains all posts on which the currently authenticated user interacted on, ordered by their last activity.
 
 ### Request
 
@@ -98,7 +98,7 @@ See [Main Stream Response example](#response).
 
 ##  Get mentions stream
 
-Contains all posts in which mentioned the currently authenticated user, ordered by their creation time stamp.
+Contains all posts in which the currently authenticated user is mentioned, ordered by their creation timestamp.
 
 ### Request
 
@@ -112,7 +112,7 @@ See [Main Stream Response example](#response).
 
 ## Get tag stream
 
-Contains posts tagged with one or more tags followed by the authenticated user.
+Contains posts tagged with one or more tags followed by the currently authenticated user.
 
 ### Request
 
