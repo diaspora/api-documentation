@@ -30,7 +30,7 @@ GET /api/v1/notifications
 | Name        | Type      | Description                                                            |
 | ----------- | --------- | ---------------------------------------------------------------------- |
 | only_after  | timestamp | If set, only notifications updated after the given time will be shown. |
-| only_unread | timestamp | If true, the response will only contain unread notifications.          |
+| only_unread | boolean   | If true, the response will only contain unread notifications.          |
 | type        | string    | Only show notifications with the specified type.                       |
 
 ### Response
