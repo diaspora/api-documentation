@@ -4,14 +4,13 @@ title: Search
 
 {% include toc.md %}
 
+**Limitation on search results**:
+
+Please note that, since diaspora\* is a distributed social network, search results may vary from pod to pod. At the moment, there is no general distribution of content implemented, so a pod is only able to search items explicitly sent to the pod.
+
 ## Search for users
 
 Contains users that matches the selected criteria. Please note that, at this moment, only one selector can be enabled at the same time.
-
-{% include warning_box.html
-   title="Limitations on user search"
-   content="Insert note about decentralized issues here."
-%}
 
 ### Request
 
