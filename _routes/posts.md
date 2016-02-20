@@ -3,6 +3,7 @@ title: Posts
 see_also:
   - comments
   - likes
+  - photos
   - post_interactions
   - reshares
 ---
@@ -179,8 +180,26 @@ GET /api/v1/posts/:post_guid
 POST /api/v1/posts
 ~~~
 ~~~json
-{}
+{
+  "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.",
+  "public": false,
+  "aspects": [
+    2,
+    3
+  ]
+}
 ~~~
+
+### Parameters
+
+| Name     | Type     | Description                                                                                          |
+| -------- | -------- | ---------------------------------------------------------------------------------------------------- |
+| aspects  | array    | Array of aspect IDs to share this post with.                                                         |
+| body     | string   | A markdown formatted body with optional [mentions](#mentions).                                       |
+| location | Location | [See above](#location).                                                                              |
+| photos   | array    | Array of GUIDs from pending photos that should be attached to a post. (See the Photos documentation) |
+| poll     | Poll     | [See above](#polls).                                                                                 |
+| public   | boolean  | Whether the post should be public or not.                                                            |
 
 ### Response
 
