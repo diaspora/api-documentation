@@ -64,5 +64,47 @@ GET /api/v1/search/posts
 ### Response
 
 ~~~json
-{}
+[
+  {
+    "guid": "83d406e0b9b20133e40c406c8f31e210",
+    "created_at": "2016-02-20T03:46:57.955Z",
+    "post_type": "StatusMessage",
+    "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a di...",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.",
+    "provider_display_name": "ExampleApp",
+    "public": true,
+    "nsfw": false,
+    "author": {
+      "guid": "f50ffc00b188013355e3705681972339",
+      "diaspora_id": "alice@example.com",
+      "name": "Alice Testing",
+      "avatar": "http://example.com/uploads/images/thumb_medium_83abe5319ef830c2bd84.jpg"
+    },
+    "interaction_counters": {
+      "comments": 14,
+      "likes": 42,
+      "reshares": 9
+    }
+  },
+  {
+    "guid": "466738b0b9c30133e40e406c8f31e210",
+    "created_at": "2016-02-20T05:47:02.694Z",
+    "post_type": "StatusMessage",
+    "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a di...",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.",
+    "public": true,
+    "nsfw": false,
+    "author": {
+      "guid": "19103170b8cc0133e40d406c8f31e210",
+      "diaspora_id": "carol@example.com",
+      "name": "Carol Testing",
+      "avatar": "http://example.com/uploads/images/thumb_medium_2e1bc500b8cc0133e40d.jpg"
+    },
+    "interaction_counters": {
+      "comments": 14,
+      "likes": 42,
+      "reshares": 9
+    }
+  }
+]
 ~~~
