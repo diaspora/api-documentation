@@ -93,10 +93,10 @@ PATCH /api/v1/aspects/:aspect_id
 
 ### Parameters
 
-| Name   | Type    | Description                              |
-| ------ | ------- | ---------------------------------------- |
-| name   | string  | The aspects name.                        |
-| order  | integer | The aspects position in the aspect list. |
+| Name   | Type    | Description                                                                                                                                     |
+| ------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| name   | string  | The aspects name.                                                                                                                               |
+| order  | integer | The aspects position in the aspect list. If provided, the aspect will get inserted into the given position and other aspects will be reordered. |
 
 ### Response
 
@@ -104,6 +104,7 @@ PATCH /api/v1/aspects/:aspect_id
 {
   "id": 3,
   "name": "diaspora community",
+  "order": 4,
   "contacts_visible": false,
   "chat_enabled": true
 }
