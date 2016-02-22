@@ -20,11 +20,13 @@ GET /api/v1/aspects
 [
   {
     "id": 1,
-    "name": "Family"
+    "name": "Family",
+    "order": 1
   },
   {
     "id": 2,
-    "name": "Friends"
+    "name": "Friends",
+    "order": 2
   }
 ]
 ~~~
@@ -43,6 +45,7 @@ GET /api/v1/aspects/:aspect_id
 {
   "id": 1,
   "name": "Family",
+  "order": 1,
   "contacts_visible": true,
   "chat_enabled": true
 }
@@ -69,6 +72,7 @@ POST /api/v1/aspects
 {
   "id": 3,
   "name": "diaspora developers",
+  "order": 4,
   "contacts_visible": false,
   "chat_enabled": true
 }
@@ -86,6 +90,13 @@ PATCH /api/v1/aspects/:aspect_id
   "name": "diaspora community"
 }
 ~~~
+
+### Parameters
+
+| Name   | Type    | Description                              |
+| ------ | ------- | ---------------------------------------- |
+| name   | string  | The aspects name.                        |
+| order  | integer | The aspects position in the aspect list. |
 
 ### Response
 
