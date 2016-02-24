@@ -1,5 +1,5 @@
-baseurl: https://denschub.github.io/diaspora-api-documentation
-contribute_url: https://github.com/denschub/diaspora-api-documentation/blob/gh-pages/CONTRIBUTING.md
+baseurl: https://diaspora.github.io/api-documentation
+contribute_url: https://github.com/diaspora/api-documentation/blob/gh-pages/CONTRIBUTING.md
 
 exclude:
   - .*
