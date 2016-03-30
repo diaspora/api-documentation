@@ -93,10 +93,12 @@ PATCH /api/v1/aspects/:aspect_id
 
 ### Parameters
 
-| Name   | Type    | Description                                                                                                                                     |
-| ------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| name   | string  | The aspects name.                                                                                                                               |
-| order  | integer | The aspects position in the aspect list. If provided, the aspect will get inserted into the given position and other aspects will be reordered. |
+| Name             | Type    | Description                                                                                                                                     |
+| ---------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| chat_enabled     | boolean | Whether the chat is enabled for this aspect or not.                                                                                             |
+| contacts_visible | boolean | Whether the contacts should be able to see each others or not.                                                                                  |
+| name             | string  | The aspects name.                                                                                                                               |
+| order            | integer | The aspects position in the aspect list. If provided, the aspect will get inserted into the given position and other aspects will be reordered. |
 
 ### Response
 
