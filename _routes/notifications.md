@@ -6,14 +6,14 @@ title: Notifications
 
 **Possible notification types**:
 
-| Type            | Description                                                     |
-| --------------- | --------------------------------------------------------------- |
-| also_commented  | Someone commented on a post the current user also commented on. |
-| comment_on_post | Someone commented on a post the current user created.           |
-| liked           | Someone liked a post the current user created.                  |
-| mentioned       | Someone mentioned the current user in a post.                   |
-| reshared        | Someone reshared one of the current user's posts.               |
-| started_sharing | Someone started sharing with the current user.                  |
+| Type              | Description                                                     |
+| ----------------- | --------------------------------------------------------------- |
+| also_commented    | Someone commented on a post the current user also commented on. |
+| commented_on_post | Someone commented on a post the current user created.           |
+| liked             | Someone liked a post the current user created.                  |
+| mentioned         | Someone mentioned the current user in a post.                   |
+| reshared          | Someone reshared one of the current user's posts.               |
+| started_sharing   | Someone started sharing with the current user.                  |
 
 "Someone" is defined in `event_creators` which represents one or more user profiles. All types, excluding `started_sharing` will include a `target_guid` (in the list route) or `target` (in the single-notification route) identifying the post the event was created at.
 
