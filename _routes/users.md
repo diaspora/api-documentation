@@ -17,8 +17,7 @@ GET /api/v1/user
 ~~~json
 {
   "guid": "5cebd150b82e0133e40c406c8f31e210",
-  "first_name": "Bob",
-  "last_name": "Testing",
+  "name": "Bob Testing",
   "searchable": true,
   "show_profile_info": true,
   "birthday": "1984-01-02",
@@ -49,7 +48,7 @@ PATCH /api/v1/user
 ~~~json
 {
   "location": "My home!",
-  "last_name": "Testing"
+  "name": "Bob Anonymous"
 }
 ~~~
 
@@ -62,8 +61,7 @@ PATCH /api/v1/user
 | birthday          | date    | The users birthday. ISO 8601, date only                               |
 | gender            | string  | The profiles gender.                                                  |
 | location          | string  | The users location.                                                   |
-| first_name        | string  | The new profile firstname.                                            |
-| last_name         | string  | The new profile lastname.                                             |
+| name              | string  | The new profile name.                                                 |
 | searchable        | boolean | Whether the profile should be searchable via the profile name or not. |
 | show_profile_info | boolean | whether the public info should be publicly visible or not.            |
 | tags              | array   | Up to five tags to tag the profile with.                              |
@@ -73,8 +71,7 @@ PATCH /api/v1/user
 ~~~json
 {
   "guid": "5cebd150b82e0133e40c406c8f31e210",
-  "first_name": "Bob",
-  "last_name": "Testing",
+  "name": "Bob Anonymous",
   "searchable": true,
   "show_profile_info": true,
   "birthday": "1984-01-02",
@@ -110,14 +107,13 @@ GET /api/v1/users/:person_guid
 ~~~json
 {
   "guid": "f50ffc00b188013355e3705681972339",
-  "first_name": "Alice",
-  "last_name": "Testing",
+  "name": "Alice Testing",
   "birthday": "1984-01-02",
   "diaspora_id": "alice@example.com",
   "gender": "Example",
   "location": "My home!",
   "bio": "Lorem ipsum **dolor sit amet**, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat!",
-  "blocked": false,
+  "blocked" false,
   "avatar": {
     "large": "http://example.com/uploads/images/thumb_large_0fc4bbc68f744c27ed80.jpg",
     "medium": "http://example.com/uploads/images/thumb_medium_0fc4bbc68f744c27ed80.jpg",
