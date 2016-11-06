@@ -20,7 +20,7 @@ GET /api/v1/user
   "name": "Bob Testing",
   "searchable": true,
   "show_profile_info": true,
-  "birthday": "January 02 1984",
+  "birthday": "1984-01-02",
   "diaspora_id": "bob@example.com",
   "gender": "Example",
   "location": "World",
@@ -58,7 +58,7 @@ PATCH /api/v1/user
 | Name              | Type    | Description                                                           |
 | ----------------- | ------- | --------------------------------------------------------------------- |
 | bio               | string  | The profiles long bio text.                                           |
-| birthday          | date    | The users birthday.                                                   |
+| birthday          | date    | The users birthday. ISO 8601, date only                               |
 | gender            | string  | The profiles gender.                                                  |
 | location          | string  | The users location.                                                   |
 | name              | string  | The new profile name.                                                 |
@@ -74,7 +74,7 @@ PATCH /api/v1/user
   "name": "Bob Anonymous",
   "searchable": true,
   "show_profile_info": true,
-  "birthday": "January 02 1984",
+  "birthday": "1984-01-02",
   "diaspora_id": "bob@example.com",
   "gender": "Example",
   "location": "My home!",
@@ -108,7 +108,7 @@ GET /api/v1/users/:person_guid
 {
   "guid": "f50ffc00b188013355e3705681972339",
   "name": "Alice Testing",
-  "birthday": "January 02 1984",
+  "birthday": "1984-01-02",
   "diaspora_id": "alice@example.com",
   "gender": "Example",
   "location": "My home!",
