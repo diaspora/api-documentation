@@ -61,4 +61,4 @@ DELETE /api/v1/aspects/:aspect_id/contacts/:person_guid
 Status: 204 No Content
 ~~~
 
-[aspects]: {{ site.baseurl }}/routes/aspects.html
+[aspects]: {{ site.base_url }}/routes/aspects.html

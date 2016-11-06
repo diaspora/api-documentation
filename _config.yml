@@ -1,4 +1,4 @@
-baseurl: https://diaspora.github.io/api-documentation
+base_url: https://diaspora.github.io/api-documentation
 contribute_url: https://github.com/diaspora/api-documentation/blob/gh-pages/CONTRIBUTING.md
 
 exclude:

@@ -24,7 +24,7 @@
     {% endfor %}
 
     <li>
-      <a href="{{ site.baseurl }}{{ crosslink_url }}">
+      <a href="{{ site.base_url }}{{ crosslink_url }}">
         {{ crosslink_title }}
       </a>
     </li>
