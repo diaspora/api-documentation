@@ -18,6 +18,8 @@ GET /api/v1/photos
 [
   {
     "guid": "0a992a10b9db0133e40e406c8f31e210",
+    "post": "b50abae085ff0134029244b301d53d2d",
+    "created_at": "2016-11-06T03:43:03.382Z",
     "dimensions": {
       "height": 1200,
       "width": 1600
@@ -30,6 +32,8 @@ GET /api/v1/photos
   },
   {
     "guid": "114999c0b9db0133e40e406c8f31e210",
+    "post": "c32c73a085ff0134029244b301d53d2d",
+    "created_at": "2016-11-06T03:42:27.807Z",
     "dimensions": {
       "height": 1200,
       "width": 1600
@@ -56,6 +60,8 @@ GET /api/v1/photos/:photo_guid
 ~~~json
 {
   "guid": "114999c0b9db0133e40e406c8f31e210",
+  "post": "c32c73a085ff0134029244b301d53d2d",
+  "created_at": "2016-11-06T03:42:27.807Z",
   "dimensions": {
     "height": 1200,
     "width": 1600
@@ -92,6 +98,8 @@ Photo file as POST multipart payload with a matching mime-type (use `application
 ~~~json
 {
   "guid": "114999c0b9db0133e40e406c8f31e210",
+  "post": "c32c73a085ff0134029244b301d53d2d",
+  "created_at": "2016-11-06T03:42:27.807Z",
   "dimensions": {
     "height": 1200,
     "width": 1600
