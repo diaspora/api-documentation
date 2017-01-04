@@ -126,4 +126,4 @@ DELETE /api/v1/aspects/:aspect_id
 Status: 204 No Content
 ~~~
 
-[contacts]: {{ site.base_url }}/routes/contacts.html
+[contacts]: {{ site.baseurl }}/routes/contacts.html

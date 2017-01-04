@@ -70,6 +70,6 @@ POST /api/v1/posts/:post_guid/hide
 Status: 204 No Content
 ~~~
 
-[comments]: {{ site.base_url }}/routes/comments.html
-[likes]: {{ site.base_url }}/routes/likes.html
-[reshares]: {{ site.base_url }}/routes/reshares.html
+[comments]: {{ site.baseurl }}/routes/comments.html
+[likes]: {{ site.baseurl }}/routes/likes.html
+[reshares]: {{ site.baseurl }}/routes/reshares.html

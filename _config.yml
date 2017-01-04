@@ -1,4 +1,5 @@
-base_url: https://diaspora.github.io/api-documentation
+url: "https://diaspora.github.io" # the base hostname & protocol
+baseurl: "/api-documentation" # the subpath
 contribute_url: https://github.com/diaspora/api-documentation/blob/gh-pages/CONTRIBUTING.md
 
 exclude:
