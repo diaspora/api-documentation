@@ -123,3 +123,31 @@ GET /api/v1/streams/tags
 ### Response
 
 See [Main Stream Response example](#response).
+
+## Get liked stream
+
+Contains posts liked by the currently authenticated user.
+
+### Request
+
+~~~
+GET /api/v1/streams/liked
+~~~
+
+### Response
+
+See [Main Stream Response example](#response).
+
+## Get commented stream
+
+Contains posts commented by the currently authenticated user.
+
+### Request
+
+~~~
+GET /api/v1/streams/commented
+~~~
+
+### Response
+
+See [Main Stream Response example](#response).
