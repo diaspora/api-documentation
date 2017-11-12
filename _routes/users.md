@@ -113,7 +113,7 @@ GET /api/v1/users/:person_guid
   "gender": "Example",
   "location": "My home!",
   "bio": "Lorem ipsum **dolor sit amet**, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat!",
-  "blocked" false,
+  "blocked": false,
   "avatar": {
     "large": "http://example.com/uploads/images/thumb_large_0fc4bbc68f744c27ed80.jpg",
     "medium": "http://example.com/uploads/images/thumb_medium_0fc4bbc68f744c27ed80.jpg",
