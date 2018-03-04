@@ -38,6 +38,10 @@ GET /api/v1/user
 }
 ~~~
 
+### Errors
+
+No specific errors for this API endpoint.
+
 ## Update the currently authenticated users profile
 
 ### Request
@@ -92,6 +96,12 @@ PATCH /api/v1/user
 }
 ~~~
 
+### Errors
+
+| Status code | Error reason               |
+| ----------- | -------------------------- |
+| 400         | Wrong value of a parameter |
+
 ## Get information about a single user
 
 Please note that the amount of information you retrieve from this request depends on whether the requested person shares with the currently authenticated user or not.
@@ -136,6 +146,12 @@ GET /api/v1/users/:person_guid
 }
 ~~~
 
+### Errors
+
+| Status code | Error reason                               |
+| ----------- | ------------------------------------------ |
+| 404         | User with provided guid could not be found |
+
 ## Get contacts from a single user
 
 Please note that, depending on the users aspect settings, you might not see other contacts and get an empty response instead.
@@ -164,6 +180,12 @@ GET /api/v1/users/:person_guid/contacts
   }
 ]
 ~~~
+
+### Errors
+
+| Status code | Error reason                               |
+| ----------- | ------------------------------------------ |
+| 404         | User with provided guid could not be found |
 
 ## Get posts by a single user
 
@@ -221,6 +243,12 @@ GET /api/v1/users/:person_guid/posts
 ]
 ~~~
 
+### Errors
+
+| Status code | Error reason                               |
+| ----------- | ------------------------------------------ |
+| 404         | User with provided guid could not be found |
+
 ## Get photos by a single user
 
 ### Request
@@ -259,3 +287,9 @@ GET /api/v1/users/:person_guid/photos
   }
 ]
 ~~~
+
+### Errors
+
+| Status code | Error reason                               |
+| ----------- | ------------------------------------------ |
+| 404         | User with provided guid could not be found |

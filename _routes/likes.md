@@ -37,6 +37,12 @@ GET /api/v1/posts/:post_guid/likes
 ]
 ~~~
 
+### Errors
+
+| Status code | Error reason                               |
+| ----------- | ------------------------------------------ |
+| 404         | Post with provided guid could not be found |
+
 ## Like a post
 
 ### Request
@@ -51,6 +57,14 @@ POST /api/v1/posts/:post_guid/likes
 Status: 204 No Content
 ~~~
 
+### Errors
+
+| Status code | Error reason                               |
+| ----------- | ------------------------------------------ |
+| 404         | Post with provided guid could not be found |
+| 422         | User is not allowed to like                |
+| 422         | Like already exists                        |
+
 ## Unlike a post
 
 ### Request
@@ -64,3 +78,10 @@ DELETE /api/v1/posts/:post_guid/likes
 ~~~
 Status: 204 No Content
 ~~~
+
+### Errors
+
+| Status code | Error reason                               |
+| ----------- | ------------------------------------------ |
+| 404         | Post with provided guid could not be found |
+| 404         | Like doesn't exist                         |
