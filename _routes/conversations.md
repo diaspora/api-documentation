@@ -72,6 +72,10 @@ GET /api/v1/conversations
 ]
 ~~~
 
+### Errors
+
+No specific errors for this API endpoint.
+
 ## Get information about a single conversation
 
 ### Request
@@ -110,6 +114,12 @@ GET /api/v1/conversations/:conversation_guid
   ]
 }
 ~~~
+
+### Errors
+
+| Status code | Error reason                                       |
+| ----------- | -------------------------------------------------- |
+| 404         | Conversation with provided guid could not be found |
 
 ## Create new conversation
 
@@ -153,6 +163,12 @@ POST /api/v1/conversations
 }
 ~~~
 
+### Errors
+
+| Status code | Error reason                                |
+| ----------- | ------------------------------------------- |
+| 422         | Couldn't accept or process the conversation |
+
 ## Ignore and hide a conversation
 
 ### Request
@@ -166,6 +182,12 @@ DELETE /api/v1/conversations/:conversation_guid
 ~~~
 Status: 204 No Content
 ~~~
+
+### Errors
+
+| Status code | Error reason                                       |
+| ----------- | -------------------------------------------------- |
+| 404         | Conversation with provided guid could not be found |
 
 ## List messages in a conversation
 
@@ -223,6 +245,12 @@ GET /api/v1/conversations/:conversation_guid/messages
 ]
 ~~~
 
+### Errors
+
+| Status code | Error reason                                       |
+| ----------- | -------------------------------------------------- |
+| 404         | Conversation with provided guid could not be found |
+
 ## Post new message to a conversation
 
 ### Request
@@ -251,3 +279,10 @@ POST /api/v1/conversations/:conversation_guid/messages
   }
 }
 ~~~
+
+### Errors
+
+| Status code | Error reason                                       |
+| ----------- | -------------------------------------------------- |
+| 404         | Conversation with provided guid could not be found |
+| 422         | Couldn't accept or process the conversation        |

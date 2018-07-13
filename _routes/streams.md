@@ -62,6 +62,10 @@ GET /api/v1/streams/main
 ]
 ~~~
 
+### Errors
+
+No specific errors for this API endpoint.
+
 ## Get aspect stream
 
 Contains all posts in some or all aspects. If `aspect_ids` is empty, all aspects are considered.
@@ -82,6 +86,10 @@ GET /api/v1/streams/aspects
 
 See [Main Stream Response example](#response).
 
+### Errors
+
+No specific errors for this API endpoint.
+
 ## Get activity stream
 
 Contains all posts on which the currently authenticated user interacted on, ordered by their last activity.
@@ -95,6 +103,10 @@ GET /api/v1/streams/activity
 ### Response
 
 See [Main Stream Response example](#response).
+
+### Errors
+
+No specific errors for this API endpoint.
 
 ##  Get mentions stream
 
@@ -110,6 +122,10 @@ GET /api/v1/streams/mentions
 
 See [Main Stream Response example](#response).
 
+### Errors
+
+No specific errors for this API endpoint.
+
 ## Get tag stream
 
 Contains posts tagged with one or more tags followed by the currently authenticated user.
@@ -123,6 +139,10 @@ GET /api/v1/streams/tags
 ### Response
 
 See [Main Stream Response example](#response).
+
+### Errors
+
+No specific errors for this API endpoint.
 
 ## Get liked stream
 
@@ -138,6 +158,10 @@ GET /api/v1/streams/liked
 
 See [Main Stream Response example](#response).
 
+### Errors
+
+No specific errors for this API endpoint.
+
 ## Get commented stream
 
 Contains posts commented by the currently authenticated user.
@@ -151,3 +175,7 @@ GET /api/v1/streams/commented
 ### Response
 
 See [Main Stream Response example](#response).
+
+### Errors
+
+No specific errors for this API endpoint.

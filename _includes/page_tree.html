@@ -1,4 +1,5 @@
 <ul class="{{ include.ulclasses | default: "nav nav-pills nav-stacked" }}">
   <li class="{% include active_class.html url="/" %}"><a href="{{ site.baseurl }}/index.html">Overview</a></li>
   <li class="{% include active_class.html url="/authentication.html" %}"><a href="{{ site.baseurl }}/authentication.html">Authentication</a></li>
+  <li class="{% include active_class.html url="/errors.html" %}"><a href="{{ site.baseurl }}/errors.html">Response codes and errors</a></li>
 </ul>

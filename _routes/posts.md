@@ -55,11 +55,11 @@ Mentioned people will be included in a separate array for advanced displaying. A
 
 One or more photos can be attached to a post. Images are provided in multiple resolutions, so bandwidth usage can be optimized.
 
-| Name   | Max. resolution   |
-| ------ | ----------------- |
-| large  | max. 700px width  |
-| medium | 100x100           |
-| small  | 50x50             |
+| Name   | Max. resolution  |
+| ------ | ---------------- |
+| large  | max. 700px width |
+| medium | 100x100          |
+| small  | 50x50            |
 
 ~~~json
 {
@@ -172,6 +172,12 @@ GET /api/v1/posts/:post_guid
 }
 ~~~
 
+### Errors
+
+| Status code | Error reason                               |
+| ----------- | ------------------------------------------ |
+| 404         | Post with provided guid could not be found |
+
 ## Publish a post
 
 ### Request
@@ -227,6 +233,13 @@ POST /api/v1/posts
 }
 ~~~
 
+### Errors
+
+| Status code | Error reason              | TODO notes                                                                                                                            |
+| ----------- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| 403         | Failed to create the post | This is the status code of the present (non-API) status message controller. Feels sensible to change that to 422 or 400 or something. |
+
+
 ## Delete a post
 
 ### Request
@@ -240,3 +253,8 @@ DELETE /api/v1/posts/:post_guid
 ~~~
 Status: 204 No Content
 ~~~
+
+| Status code | Error reason                               |
+| ----------- | ------------------------------------------ |
+| 404         | Post with provided guid could not be found |
+| 403         | Not allowed to delete the post             |

@@ -41,6 +41,12 @@ GET /api/v1/posts/:post_guid/comments
 ]
 ~~~
 
+### Errors
+
+| Status code | Error reason                               |
+| ----------- | ------------------------------------------ |
+| 404         | Post with provided guid could not be found |
+
 ## Delete a comment
 
 Only the current users comments or comments written on the current users posts can be deleted.
@@ -56,6 +62,14 @@ DELETE /api/v1/posts/:post_guid/comments/:comment_guid
 ~~~
 Status: 204 No Content
 ~~~
+
+### Errors
+
+| Status code | Error reason                                  |
+| ----------- | --------------------------------------------- |
+| 403         | User not allowed to delete the comment        |
+| 404         | Post with provided guid could not be found    |
+| 404         | Comment with provided guid could not be found |
 
 ## Report a comment
 
@@ -75,6 +89,14 @@ POST /api/v1/posts/:post_guid/comments/:comment_guid/report
 ~~~
 Status: 204 No Content
 ~~~
+
+### Errors
+
+| Status code | Error reason                                     |
+| ----------- | ------------------------------------------------ |
+| 404         | Post with provided guid could not be found       |
+| 404         | Comment with provided guid could not be found    |
+| 409         | This item already has been reported by this user |
 
 ## Add a comment to a post
 
@@ -104,3 +126,11 @@ POST /api/v1/posts/:post_guid/comments
   "body": "Can I use these for my own website?"
 }
 ~~~
+
+### Errors
+
+| Status code | Error reason                               |
+| ----------- | ------------------------------------------ |
+| 404         | Post with provided guid could not be found |
+| 422         | User is not allowed to comment             |
+| 422         | Couldn't accept or process the comment     |

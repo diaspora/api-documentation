@@ -138,6 +138,12 @@ There are multiple ways of transmitting access tokens:
 * as an `application/x-www-form-urlencoded` parameter: `access_token=[access token]`
 * inside the request header: `Authorization: Bearer [access token]`
 
+## Authentication errors
+
+All API nodes require authentication. If no token or an invlaid token is supplied, the API will always return `401 Unauthorized`.
+
+If the client tries to access an OAuth scope that was not part of the authorization, the API will return `403 Forbidden`.
+
 ## Additional information and specifications
 
 * [OpenID Connect Core 1.0][connect] specification including flow descriptions
