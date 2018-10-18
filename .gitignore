@@ -1,3 +1,6 @@
 .sass-cache/
 _site/
 .vimrc
+
+Gemfile
+Gemfile.lock
