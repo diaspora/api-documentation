@@ -4,6 +4,9 @@ title: Photos
 
 {% include toc.md %}
 
+**See also:**
+  * [Users (Get photos for a single user)](users.html#get-photos-by-a-single-user)
+
 ## Get photos uploaded by the current user
 
 ### Request
