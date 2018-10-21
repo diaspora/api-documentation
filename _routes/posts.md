@@ -40,7 +40,7 @@ Mentioned people will be included in a separate array for advanced displaying. A
 
 ~~~json
 {
-  "body": "Playing a game of Lorem Ipsum with @{Bob Testing ; bob@example.com}!",
+  "body": "Playing a game of Lorem Ipsum with @{bob@example.com}!",
   "mentioned_people": [
     {
       "guid": "cb7e4aa0b82f0133e40d406c8f31e210",
