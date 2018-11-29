@@ -27,7 +27,11 @@ GET /.well-known/openid-configuration
     "name",
     "nickname",
     "profile",
-    "picture"
+    "picture",
+    "gender",
+    "birthdate",
+    "locale",
+    "updated_at"
   ],
   "id_token_signing_alg_values_supported": [
     "RS256"
@@ -47,14 +51,20 @@ GET /.well-known/openid-configuration
   ],
   "scopes_supported": [
     "openid",
-    "sub",
-    "aud",
-    "name",
-    "nickname",
+    "contacts:read",
+    "contacts:modify",
+    "conversations",
+    "email",
+    "interactions",
+    "notifications",
+    "private:read",
+    "private:modify",
+    "public:read",
+    "public:modify",
     "profile",
-    "picture",
-    "read",
-    "write"
+    "profile:modify",
+    "tags:read",
+    "tags:modify"
   ],
   "subject_types_supported": [
     "public",
@@ -130,6 +140,8 @@ There are two main ways to request an access token. Specifying the entire flow i
 * The [*Authorization Code Flow*][authcode-flow] which is usually used by native client applications. After authorization, the client receives an authorization code, which can then exchange it for an access token using defined endpoints.
 * The [*Implicit Flow*][implicit-flow] which is usually used by browser-based applications. After authorization, the access token is directly returned to the endpoint via the users user agent.
 
+Each access token is requested with a specific set of permissions according to the OpenID Connect specifications which are called "scopes". You can read more about the scopes specified and implemented in diaspora* at the ["Scopes"][scopes] section of this documentation.
+
 ## Using access tokens
 
 There are multiple ways of transmitting access tokens:
@@ -155,3 +167,4 @@ If the client tries to access an OAuth scope that was not part of the authorizat
 [connect]: http://openid.net/specs/openid-connect-core-1_0.html
 [discovery]: http://openid.net/specs/openid-connect-discovery-1_0.html
 [implicit-flow]: http://openid.net/specs/openid-connect-core-1_0.html#ImplicitFlowAuth
+[scopes]: {{ site.baseurl }}/scopes.html
