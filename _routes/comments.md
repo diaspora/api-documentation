@@ -6,6 +6,8 @@ title: Comments
 
 ## Get comments for a post
 
+Required API scope: the one which gives read access to the post (`public:read` for public posts and `private:read` for private posts).
+
 ### Request
 
 ~~~
@@ -51,6 +53,8 @@ GET /api/v1/posts/:post_guid/comments
 
 Only the current users comments or comments written on the current users posts can be deleted.
 
+Required API scope: `interactions`. Read access to the post must be present too (`public:read` for public posts and `private:read` for private posts).
+
 ### Request
 
 ~~~
@@ -72,6 +76,8 @@ Status: 204 No Content
 | 404         | Comment with provided guid could not be found |
 
 ## Report a comment
+
+Required API scope: `interactions`. Read access to the post must be present too (`public:read` for public posts and `private:read` for private posts).
 
 ### Request
 
@@ -99,6 +105,8 @@ Status: 204 No Content
 | 409         | This item already has been reported by this user |
 
 ## Add a comment to a post
+
+Required API scope: `interactions`. Read access to the post must be present too (`public:read` for public posts and `private:read` for private posts).
 
 ### Request
 

@@ -9,6 +9,10 @@ title: Photos
 
 ## Get photos uploaded by the current user
 
+Required API scope: `public:read`
+
+Optional API scope: `private:read`
+
 ### Request
 
 ~~~
@@ -52,6 +56,8 @@ GET /api/v1/photos
 
 ## Get information about a single photo
 
+Required API scope: `public:read` or `private:read` depending on the photo visibility
+
 ### Request
 
 ~~~
@@ -80,6 +86,8 @@ GET /api/v1/photos/:photo_guid
 ## Upload photo
 
 `pending` might get used if the uploaded photo is intended to get used as a post attachment. Do not upload *unused* images since pending uploads might get deleted after some timeout without further warnings.
+
+Required API scope: `public:modify` or `private:modify` depending on the photo visibility
 
 ### Request
 
@@ -118,6 +126,8 @@ Photo file as POST multipart payload with a matching mime-type (use `application
 ## Delete a photo
 
 Note that deleting a photo will not remove items where it was attached to, like posts.
+
+Required API scope: `public:modify` or `private:modify` depending on the photo visibility
 
 ### Request
 

@@ -8,6 +8,8 @@ see_also:
 
 ## Get lists of aspects
 
+Required API scope: `contacts:read`
+
 ### Request
 
 ~~~
@@ -33,6 +35,8 @@ GET /api/v1/aspects
 
 ## Get information about an aspect
 
+Required API scope: `contacts:read`
+
 ### Request
 
 ~~~
@@ -52,6 +56,8 @@ GET /api/v1/aspects/:aspect_id
 ~~~
 
 ## Create new aspect
+
+Required API scope: `contacts:modify`
 
 ### Request
 
@@ -79,6 +85,8 @@ POST /api/v1/aspects
 ~~~
 
 ## Edit an aspect
+
+Required API scope: `contacts:modify`
 
 ### Request
 
@@ -113,6 +121,8 @@ PATCH /api/v1/aspects/:aspect_id
 ~~~
 
 ## Delete an aspect
+
+Required API scope: `contacts:modify`
 
 ### Request
 

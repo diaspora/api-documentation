@@ -22,6 +22,8 @@ Also it is possible that scopes depend on other scopes. It means that requesting
 
 Each API endpoint requires at least one scope to be granted. If the access token used for making a request wasn't granted the scope of the respective endpoint then the response will have a `403` status code and no actual content.
 
+In this specification each endpoint description contains the name of the scope required to access this endpoint. Most of the time this is only one scope. However for some types of data like posts the required scope depends on the data visibility (public vs private). Besides this, for some endpoints, like streams the dataset in response depends on the set of granted scopes.
+
 ## Scopes
 
 ### contacts:read

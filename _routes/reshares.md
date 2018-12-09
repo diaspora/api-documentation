@@ -6,6 +6,8 @@ title: Reshares
 
 ## Get reshares for a single post
 
+Required API scope: `public:read`
+
 ### Request
 
 ~~~
@@ -40,6 +42,8 @@ GET /api/v1/posts/:post_guid/reshares
 ## Reshare a post
 
 Resharing is effectively creating a new post, which is why this method returns a post object.
+
+Required API scope: `public:modify`
 
 ### Request
 

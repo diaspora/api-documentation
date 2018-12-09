@@ -8,6 +8,8 @@ see_also:
 
 ## Get list of contacts in an aspect
 
+Required API scope: `contacts:read`
+
 ### Request
 
 ~~~
@@ -35,6 +37,8 @@ GET /api/v1/aspects/:aspect_id/contacts
 
 ## Add a user to an aspect
 
+Required API scope: `contacts:modify`
+
 ### Request
 
 ~~~
@@ -48,6 +52,8 @@ Status: 204 No Content
 ~~~
 
 ## Remove a user from an aspect
+
+Required API scope: `contacts:modify`
 
 ### Request
 

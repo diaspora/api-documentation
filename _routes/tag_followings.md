@@ -6,6 +6,8 @@ title: Tag followings
 
 ## Get list of followed tags
 
+Required API scope: `tags:read`
+
 ### Request
 
 ~~~
@@ -24,6 +26,8 @@ GET /api/v1/tag_followings
 
 ## Follow a tag
 
+Required API scope: `tags:modify`
+
 ### Request
 
 ~~~
@@ -37,6 +41,8 @@ Status: 204 No Content
 ~~~
 
 ## Unfollow a tag
+
+Required API scope: `tags:modify`
 
 ### Request
 

@@ -10,6 +10,8 @@ see_also:
 
 ## Report a post
 
+Required API scope: `interactions`. Read access to the post must be present too (`public:read` for public posts and `private:read` for private posts).
+
 ### Request
 
 ~~~
@@ -25,6 +27,8 @@ Status: 204 No Content
 ## Subscribe to a post
 
 The current user will receive notifications for subscribed posts without adding a like or comment.
+
+Required API scope: `interactions`. Read access to the post must be present too (`public:read` for public posts and `private:read` for private posts).
 
 ### Request
 
@@ -42,6 +46,8 @@ Status: 204 No Content
 
 The current user will not receive any notifications for this post, even if a comment or like was added.
 
+Required API scope: `interactions`. Read access to the post must be present too (`public:read` for public posts and `private:read` for private posts).
+
 ### Request
 
 ~~~
@@ -57,6 +63,8 @@ Status: 204 No Content
 ## Hide a post
 
 The given post will be excluded from all streams and search results.
+
+Required API scope: `interactions`. Read access to the post must be present too (`public:read` for public posts and `private:read` for private posts).
 
 ### Request
 

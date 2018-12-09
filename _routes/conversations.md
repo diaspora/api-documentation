@@ -6,6 +6,8 @@ title: Conversations
 
 ## Get list of all conversations
 
+Required API scope: `conversations`
+
 ### Request
 
 ~~~
@@ -78,6 +80,8 @@ No specific errors for this API endpoint.
 
 ## Get information about a single conversation
 
+Required API scope: `conversations`
+
 ### Request
 
 ~~~
@@ -122,6 +126,8 @@ GET /api/v1/conversations/:conversation_guid
 | 404         | Conversation with provided guid could not be found |
 
 ## Create new conversation
+
+Required API scope: `conversations`
 
 ### Request
 
@@ -171,6 +177,8 @@ POST /api/v1/conversations
 
 ## Ignore and hide a conversation
 
+Required API scope: `conversations`
+
 ### Request
 
 ~~~
@@ -192,6 +200,8 @@ Status: 204 No Content
 ## List messages in a conversation
 
 *Note*: This also marks the given conversation as read.
+
+Required API scope: `conversations`
 
 ### Request
 
@@ -252,6 +262,8 @@ GET /api/v1/conversations/:conversation_guid/messages
 | 404         | Conversation with provided guid could not be found |
 
 ## Post new message to a conversation
+
+Required API scope: `conversations`
 
 ### Request
 

@@ -8,6 +8,8 @@ title: Streams
 
 Contains posts from users the currently authenticated user is sharing with as well as posts tagged with tags which the currently authenticated user is following.
 
+Required API scope: `private:read`
+
 ### Request
 
 ~~~
@@ -70,6 +72,8 @@ No specific errors for this API endpoint.
 
 Contains all posts in some or all aspects. If `aspect_ids` is empty, all aspects are considered.
 
+Required API scope: `private:read`
+
 ### Request
 
 ~~~
@@ -94,6 +98,8 @@ No specific errors for this API endpoint.
 
 Contains all posts on which the currently authenticated user interacted on, ordered by their last activity.
 
+Required API scope: `private:read`
+
 ### Request
 
 ~~~
@@ -111,6 +117,8 @@ No specific errors for this API endpoint.
 ##  Get mentions stream
 
 Contains all posts in which the currently authenticated user is mentioned, ordered by their creation timestamp.
+
+Required API scope: `private:read`
 
 ### Request
 
@@ -130,6 +138,10 @@ No specific errors for this API endpoint.
 
 Contains posts tagged with one or more tags followed by the currently authenticated user.
 
+Required API scopes: `public:read`, `tags:read`
+
+Optional API scopes: `private:read`
+
 ### Request
 
 ~~~
@@ -148,6 +160,8 @@ No specific errors for this API endpoint.
 
 Contains posts liked by the currently authenticated user.
 
+Required API scope: `private:read`
+
 ### Request
 
 ~~~
@@ -165,6 +179,8 @@ No specific errors for this API endpoint.
 ## Get commented stream
 
 Contains posts commented by the currently authenticated user.
+
+Required API scope: `private:read`
 
 ### Request
 
