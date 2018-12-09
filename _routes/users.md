@@ -152,41 +152,6 @@ GET /api/v1/users/:person_guid
 | ----------- | ------------------------------------------ |
 | 404         | User with provided guid could not be found |
 
-## Get contacts from a single user
-
-Please note that, depending on the users aspect settings, you might not see other contacts and get an empty response instead.
-
-### Request
-
-~~~
-GET /api/v1/users/:person_guid/contacts
-~~~
-
-### Response
-
-~~~json
-[
-  {
-    "guid": "f50ffc00b188013355e3705681972339",
-    "diaspora_id": "alice@example.com",
-    "name": "Alice Testing",
-    "avatar": "http://example.com/uploads/images/thumb_medium_83abe5319ef830c2bd84.jpg"
-  },
-  {
-    "guid": "cb7e4aa0b82f0133e40d406c8f31e210",
-    "diaspora_id": "bob@example.com",
-    "name": "Bob Testing",
-    "avatar": "http://example.com/uploads/images/thumb_medium_a51bf501fe86c198c0b1.jpg"
-  }
-]
-~~~
-
-### Errors
-
-| Status code | Error reason                               |
-| ----------- | ------------------------------------------ |
-| 404         | User with provided guid could not be found |
-
 ## Get posts by a single user
 
 ### Request
