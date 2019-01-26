@@ -1,5 +1,8 @@
 ---
 title: Streams
+see_also:
+  - target: search
+    description: for finding posts with a specific tag
 ---
 
 {% include toc.md %}
