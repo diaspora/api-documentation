@@ -1,9 +1,9 @@
 ---
 title: Post interactions
 see_also:
-  - comments
-  - likes
-  - reshares
+  - target: comments
+  - target: likes
+  - target: reshares
 ---
 
 {% include toc.md %}

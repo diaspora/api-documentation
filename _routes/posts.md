@@ -1,11 +1,11 @@
 ---
 title: Posts
 see_also:
-  - comments
-  - likes
-  - photos
-  - post_interactions
-  - reshares
+  - target: comments
+  - target: likes
+  - target: photos
+  - target: post_interactions
+  - target: reshares
 ---
 
 {% include toc.md %}

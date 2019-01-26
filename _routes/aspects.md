@@ -1,7 +1,7 @@
 ---
 title: Aspects
 see_also:
-  - contacts
+  - target: contacts
 ---
 
 {% include toc.md %}
