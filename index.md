@@ -48,6 +48,10 @@ Link: <https://example.com/api/v1/example?page=2>; rel="next",
 
 `first`, `previous`, `next` and `last` are possible `rel`-values. Please **do not try to guess the pagination URLs**, some resources like streams, might use timestamps or GUIDs instead of an increasing page counter.
 
+### Limiting the amount of results per page
+
+By default, API endpoints return up to 20 items on a page. This can be changed by using the `per_page` parameter. `https://example.com/api/v1/example?page=2&per_page=50` would, for example, return 50 items. Please note that, unless otherwise noted, this parameter is capped to a maximum value of `100`.
+
 ## API support
 
 This document specifies API Version 1, which is supported by diaspora\* release X and newer. Version discovery should be done using [nodeinfo][nodeinfo] prior to making any requests to ensure the endpoints are available. If a compatible diaspora\* version was detected once, it is safe to assume a pod will stay compatible.
