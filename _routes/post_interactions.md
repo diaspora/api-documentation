@@ -38,7 +38,7 @@ POST /api/v1/posts/:post_guid/subscribe
 Status: 204 No Content
 ~~~
 
-## Mute a post
+## Mute or unmute a post
 
 The current user will not receive any notifications for this post, even if a comment or like was added.
 
@@ -47,6 +47,17 @@ The current user will not receive any notifications for this post, even if a com
 ~~~
 POST /api/v1/posts/:post_guid/mute
 ~~~
+~~~json
+{
+  "mute": true
+}
+~~~
+
+### Parameters
+
+| Name | Type    | Description                              |
+| ---- | ------- | ---------------------------------------- |
+| mute | boolean | Whether the post should be muted or not. |
 
 ### Response
 
@@ -54,7 +65,7 @@ POST /api/v1/posts/:post_guid/mute
 Status: 204 No Content
 ~~~
 
-## Hide a post
+## Hide or unhide a post
 
 The given post will be excluded from all streams and search results.
 
@@ -63,6 +74,17 @@ The given post will be excluded from all streams and search results.
 ~~~
 POST /api/v1/posts/:post_guid/hide
 ~~~
+~~~json
+{
+  "hide": true
+}
+~~~
+
+### Parameters
+
+| Name | Type    | Description                               |
+| ---- | ------- | ----------------------------------------- |
+| hide | boolean | Whether the post should be hidden or not. |
 
 ### Response
 
