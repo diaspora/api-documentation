@@ -15,6 +15,17 @@ see_also:
 ~~~
 POST /api/v1/posts/:post_guid/report
 ~~~
+~~~json
+{
+  "reason": "This post is spam."
+}
+~~~
+
+### Parameters
+
+| Name   | Type   | Description                            |
+| ------ | ------ | -------------------------------------- |
+| reason | string | The reason behind reporting this post. |
 
 ### Response
 
