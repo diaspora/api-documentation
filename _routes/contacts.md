@@ -38,8 +38,19 @@ GET /api/v1/aspects/:aspect_id/contacts
 ### Request
 
 ~~~
-POST /api/v1/aspects/:aspect_id/contacts/:person_guid
+POST /api/v1/aspects/:aspect_id/contacts
 ~~~
+~~~json
+{
+  "person": "cb7e4aa0b82f0133e40d406c8f31e210"
+}
+~~~
+
+### Parameters
+
+| Name   | Type | Description                                                      |
+| ------ | ---- | ---------------------------------------------------------------- |
+| person | GUID | The GUID of the person that should be added to the given aspect. |
 
 ### Response
 
