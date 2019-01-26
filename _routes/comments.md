@@ -69,7 +69,7 @@ Status: 204 No Content
 | ----------- | --------------------------------------------- |
 | 403         | User not allowed to delete the comment        |
 | 404         | Post with provided guid could not be found    |
-| 404         | Comment with provided guid could not be found |
+| 404         | Comment not found for the given post          |
 
 ## Report a comment
 
@@ -95,7 +95,7 @@ Status: 204 No Content
 | Status code | Error reason                                     |
 | ----------- | ------------------------------------------------ |
 | 404         | Post with provided guid could not be found       |
-| 404         | Comment with provided guid could not be found    |
+| 404         | Comment not found for the given post             |
 | 409         | This item already has been reported by this user |
 
 ## Add a comment to a post
