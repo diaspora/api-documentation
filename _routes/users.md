@@ -66,6 +66,7 @@ PATCH /api/v1/user
 | gender            | string  | The profiles gender.                                                  |
 | location          | string  | The users location.                                                   |
 | name              | string  | The new profile name.                                                 |
+| nsfw              | boolean | Whether the profile should be marked as NSFW.                         |
 | searchable        | boolean | Whether the profile should be searchable via the profile name or not. |
 | show_profile_info | boolean | whether the public info should be publicly visible or not.            |
 | tags              | array   | Up to five tags to tag the profile with.                              |
