@@ -27,8 +27,19 @@ GET /api/v1/tag_followings
 ### Request
 
 ~~~
-POST /api/v1/tag_followings/:tag_name
+POST /api/v1/tag_followings
 ~~~
+~~~json
+{
+  "name": "cats"
+}
+~~~
+
+### Parameters
+
+| Name | Type   | Description                         |
+| ---- | ------ | ----------------------------------- |
+| name | string | The name of the tag to be followed. |
 
 ### Response
 
