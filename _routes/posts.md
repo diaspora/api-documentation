@@ -131,8 +131,8 @@ A location can be added to a post. In addition to the visible `address`, the geo
 {
   "location": {
     "address": "Example Road 14, 12345 Example City, Germany",
-    "lat": "48.77",
-    "lng": "9.17"
+    "lat": 48.77,
+    "lng": 9.17
   }
 }
 ~~~

@@ -18,6 +18,7 @@ GET /api/v1/posts/:post_guid/reshares
 [
   {
     "guid": "475fc770b8fe0133e40d406c8f31e210",
+    "created_at": "2016-02-20T03:46:57.955Z",
     "author": {
       "guid": "f50ffc00b188013355e3705681972339",
       "diaspora_id": "alice@example.com",
@@ -27,6 +28,7 @@ GET /api/v1/posts/:post_guid/reshares
   },
   {
     "guid": "4cc33b10b8fe0133e40d406c8f31e210",
+    "created_at": "2016-02-20T04:15:21.213Z",
     "author": {
       "guid": "cb7e4aa0b82f0133e40d406c8f31e210",
       "diaspora_id": "bob@example.com",
