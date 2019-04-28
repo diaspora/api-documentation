@@ -142,7 +142,7 @@ This scope gives access to reading tag followings and reading tags stream.
 This scope gives access to creation and deletion of tag followings.
 
 
+[authentication]: authentication.html
 [connect]: http://openid.net/specs/openid-connect-core-1_0.html
 [connect-scopes]: https://openid.net/specs/openid-connect-core-1_0.html#ScopeClaims
 [oauth2]: https://tools.ietf.org/html/rfc6749#section-3.3
-[authentication]: authentication.html
