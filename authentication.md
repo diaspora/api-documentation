@@ -27,11 +27,7 @@ GET /.well-known/openid-configuration
     "name",
     "nickname",
     "profile",
-    "picture",
-    "gender",
-    "birthdate",
-    "locale",
-    "updated_at"
+    "picture"
   ],
   "id_token_signing_alg_values_supported": [
     "RS256"
@@ -63,6 +59,7 @@ GET /.well-known/openid-configuration
     "public:modify",
     "profile",
     "profile:modify",
+    "profile:read_private",
     "tags:read",
     "tags:modify"
   ],

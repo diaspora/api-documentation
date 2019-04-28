@@ -123,10 +123,11 @@ The `profile` scope gives read access to the following claims supported by diasp
 | nickname   | The left part of diaspora handle before `@` sign    |
 | profile    | User's profile URL address                          |
 | picture    | User avatar URL address                             |
-| gender     | Gender profile field                                |
-| birthdate  | Birth date profile field                            |
-| locale     | UI language selection specified in account settings |
-| updated_at | Date of last profile edit                           |
+| sub        | diaspora* ID of the user                            |
+
+### profile:read_private
+
+This scope gives access to additional profile fields which are a part of the user's private profile.
 
 ### profile:modify
 

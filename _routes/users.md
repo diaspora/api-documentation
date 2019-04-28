@@ -8,6 +8,8 @@ title: Users
 
 Required API scope: `profile`
 
+Optional API scope: `profile:read_private`
+
 ### Request
 
 ~~~
