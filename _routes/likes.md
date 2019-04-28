@@ -6,6 +6,8 @@ title: Likes
 
 ## Get likes for a post
 
+Required API scope: the one which gives read access to the post (`public:read` for public posts and `private:read` for private posts).
+
 ### Request
 
 ~~~
@@ -45,6 +47,8 @@ GET /api/v1/posts/:post_guid/likes
 
 ## Like a post
 
+Required API scope: `interactions`. Read access to the post must be present too (`public:read` for public posts and `private:read` for private posts).
+
 ### Request
 
 ~~~
@@ -66,6 +70,8 @@ Status: 204 No Content
 | 422         | Like already exists                        |
 
 ## Unlike a post
+
+Required API scope: `interactions`. Read access to the post must be present too (`public:read` for public posts and `private:read` for private posts).
 
 ### Request
 

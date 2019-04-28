@@ -6,6 +6,10 @@ title: Users
 
 ## Get information about the authenticated user
 
+Required API scope: `profile`
+
+Optional API scope: `profile:read_private`
+
 ### Request
 
 ~~~
@@ -43,6 +47,8 @@ GET /api/v1/user
 No specific errors for this API endpoint.
 
 ## Update the currently authenticated users profile
+
+Required API scope: `profile:modify`
 
 ### Request
 
@@ -107,6 +113,10 @@ PATCH /api/v1/user
 
 Please note that the amount of information you retrieve from this request depends on whether the requested person shares with the currently authenticated user or not.
 
+Required API scope: `public:read`
+
+Optional API scope: `contacts:read`
+
 ### Request
 
 ~~~
@@ -154,6 +164,10 @@ GET /api/v1/users/:person_guid
 | 404         | User with provided guid could not be found |
 
 ## Get posts by a single user
+
+Required API scope: `public:read`
+
+Optional API scope: `private:read`
 
 ### Request
 
@@ -216,6 +230,10 @@ GET /api/v1/users/:person_guid/posts
 | 404         | User with provided guid could not be found |
 
 ## Get photos by a single user
+
+Required API scope: `public:read`
+
+Optional API scope: `private:read`
 
 ### Request
 

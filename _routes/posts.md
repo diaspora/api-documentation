@@ -141,6 +141,8 @@ A location can be added to a post. In addition to the visible `address`, the geo
 
 Please note that this is a very simple post. See above for additional fields that could be included in this response object.
 
+Required API scope: `public:read` or `private:read` depending on the post visibility
+
 ### Request
 
 ~~~
@@ -180,6 +182,8 @@ GET /api/v1/posts/:post_guid
 | 404         | Post with provided guid could not be found |
 
 ## Publish a post
+
+Required API scope: `public:modify` or `private:modify` depending on the post visibility
 
 ### Request
 
@@ -242,6 +246,8 @@ POST /api/v1/posts
 
 
 ## Delete a post
+
+Required API scope: `public:modify` or `private:modify` depending on the post visibility
 
 ### Request
 

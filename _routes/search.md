@@ -12,6 +12,10 @@ Please note that, since diaspora\* is a distributed social network, search resul
 
 Contains users that matches the selected criteria. Please note that, at this moment, only one selector can be enabled at the same time.
 
+Required API scope: `public:read`
+
+Optional API scope: `contacts:read`
+
 ### Request
 
 ~~~
@@ -47,6 +51,10 @@ GET /api/v1/search/users
 ## Search for posts
 
 Please note that, at this moment, this route only allows searching for posts by tags. However, this may be extended in the future.
+
+Required API scope: `public:read`
+
+Optional API scope: `private:read`
 
 ### Request
 

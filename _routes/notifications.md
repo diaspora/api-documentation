@@ -19,6 +19,8 @@ title: Notifications
 
 ## Get list of all notifications
 
+Required API scope: `notifications`
+
 ### Request
 
 ~~~
@@ -79,6 +81,8 @@ GET /api/v1/notifications
 
 *Note*: This also marks the given notification as read.
 
+Required API scope: `notifications`
+
 ### Request
 
 ~~~
@@ -120,6 +124,8 @@ GET /api/v1/notifications/:notification_id
 ~~~
 
 ## Mark a notification as unread
+
+Required API scope: `notifications`
 
 ### Request
 
