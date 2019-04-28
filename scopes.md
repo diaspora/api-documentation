@@ -29,25 +29,25 @@ In this specification each endpoint description contains the name of the scope r
 ### contacts:read
 
 This scope gives access to the following requests:
-- Read aspect list
-- Read aspects membership
-- Read private user profiles of contacts
-- Read contacts of contacts when allowed by contact's aspect setting
-- User search will include contacts who are hidden from public search
+* Read aspect list
+* Read aspects membership
+* Read private user profiles of contacts
+* Read contacts of contacts when allowed by contact's aspect setting
+* User search will include contacts who are hidden from public search
 
 ### contacts:modify
 
 This scope gives access to the following requests:
-- Add new aspects
-- Rename aspects and change aspects properties
-- Delete aspects
-- Add/remove person to/from aspects
+* Add new aspects
+* Rename aspects and change aspects properties
+* Delete aspects
+* Add/remove person to/from aspects
 
 ### conversations
 
 This scope gives access to private messaging, i.e. the following requests:
-- Create conversations
-- Send private messages
+* Create conversations
+* Send private messages
 
 ### email
 
@@ -56,12 +56,12 @@ This scope is defined by the OpenID Connect spec. It allows reading user's own e
 ### interactions
 
 This scope gives access to the following requests:
-- Create/delete comments
-- Report posts/comments
-- Post/remove likes
-- Subscribe/mute posts
-- Hide posts from streams
-- Voting in polls
+* Create/delete comments
+* Report posts/comments
+* Post/remove likes
+* Subscribe/mute posts
+* Hide posts from streams
+* Voting in polls
 
 ### notifications
 
@@ -74,40 +74,40 @@ This scope is defined by the OpenID Connect spec. This is a mandatory scope. It 
 ### private:read
 
 This scope gives access to the following requests:
-- Read private posts
-- Read private posts interactions (likes, comments)
-- Reading streams: main stream, aspects stream, mention stream, activity stream, liked stream, commented stream
+* Read private posts
+* Read private posts interactions (likes, comments)
+* Reading streams: main stream, aspects stream, mention stream, activity stream, liked stream, commented stream
 
 Note: the `private:read` scope depends on `contacts:read` and can only be granted when `contacts:read` is granted too.
 
 ### private:modify
 
 This scope gives access to the following requests:
-- Create private posts
-- Post photos privately
-- Delete private posts
-- Delete private photos
+* Create private posts
+* Post photos privately
+* Delete private posts
+* Delete private photos
 
 Note: the `private:modify` scope depends on `contacts:read` and can only be granted when `contacts:read` is granted too.
 
 ### public:read
 
 This scope gives access to the following requests:
-- Read public profiles of users
-- Perform search among publicly searchable profiles
-- Read public posts
-- Read reshares
-- Read public posts interactions (likes, comments)
+* Read public profiles of users
+* Perform search among publicly searchable profiles
+* Read public posts
+* Read reshares
+* Read public posts interactions (likes, comments)
 
 Note: The `public:read` scope is granted to any authorized entity even when not explicitly requested.
 
 ### public:modify
 
 This scope gives access to the following requests:
-- Create public posts/reshares
-- Post photos
-- Delete public posts
-- Delete public photos
+* Create public posts/reshares
+* Post photos
+* Delete public posts
+* Delete public photos
 
 ### profile
 
