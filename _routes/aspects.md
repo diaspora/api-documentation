@@ -49,8 +49,7 @@ GET /api/v1/aspects/:aspect_id
 {
   "id": 1,
   "name": "Family",
-  "order": 1,
-  "chat_enabled": true
+  "order": 1
 }
 ~~~
 
@@ -65,8 +64,7 @@ POST /api/v1/aspects
 ~~~
 ~~~json
 {
-  "name": "diaspora developers",
-  "chat_enabled": true
+  "name": "diaspora developers"
 }
 ~~~
 
@@ -76,8 +74,7 @@ POST /api/v1/aspects
 {
   "id": 3,
   "name": "diaspora developers",
-  "order": 4,
-  "chat_enabled": true
+  "order": 4
 }
 ~~~
 
@@ -100,7 +97,6 @@ PATCH /api/v1/aspects/:aspect_id
 
 | Name             | Type    | Description                                                                                                                                     |
 | ---------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| chat_enabled     | boolean | Whether the chat is enabled for this aspect or not.                                                                                             |
 | name             | string  | The aspects name.                                                                                                                               |
 | order            | integer | The aspects position in the aspect list. If provided, the aspect will get inserted into the given position and other aspects will be reordered. |
 
@@ -110,8 +106,7 @@ PATCH /api/v1/aspects/:aspect_id
 {
   "id": 3,
   "name": "diaspora community",
-  "order": 4,
-  "chat_enabled": true
+  "order": 4
 }
 ~~~
 
