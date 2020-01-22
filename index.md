@@ -2,14 +2,10 @@
 ---
 
 {% include warning_box.html
-   title="This is API fiction!"
-   content="<p>This document provides the currently proposed API documentation for diaspora*. Please note that at this point in time, none of the methods are actually implemented.</p>
+   title="The API is not stable yet!"
+   content='<p>This document describes the level of API support in our current development branch for diaspora* release 0.8.0.0. Please note that until this version is officially released, <strong>the API is not considered stable yet</strong>, and anything might change anytime!</p>
 
-<p>ToDo:</p>
-
-<ul>
-  <li>Error codes and messages</li>
-</ul>"
+<p>We are interested in your feedback. If you spot an instance where diaspora* does not behave like described in the API, please do <a href="https://github.com/diaspora/diaspora/issues/new" target="_blank">file a bug in the diaspora repository</a>, and if you have feedback around the API specification, please <a href="https://github.com/diaspora/api-documentation/issues/new" target="_blank">do file a bug on the API documentation</a> for discussions. For any other questions, including support on how to use the API and as a place for open discussions on the design, <a href="https://discourse.diasporafoundation.org/c/development/api" target="_blank">there is a dedicated category on Discourse</a>!</p>'
 %}
 
 # diaspora\* API documentation
