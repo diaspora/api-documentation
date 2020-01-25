@@ -56,11 +56,12 @@ Mentioned people will be included in a separate array for advanced displaying. A
 
 One or more photos can be attached to a post. Images are provided in multiple resolutions, so bandwidth usage can be optimized.
 
-| Name   | Max. resolution  |
-| ------ | ---------------- |
-| large  | max. 700px width |
-| medium | 100x100          |
-| small  | 50x50            |
+| Name   | Max. resolution      |
+| ------ | -------------------- |
+| raw    | original upload size |
+| large  | max. 700px width     |
+| medium | 100x100              |
+| small  | 50x50                |
 
 ~~~json
 {
@@ -71,6 +72,7 @@ One or more photos can be attached to a post. Images are provided in multiple re
         "width": 1600
       },
       "sizes": {
+        "raw": "http://example.com/uploads/images/f6ce0597695a878c4663.jpg",
         "large": "http://example.com/uploads/images/scaled_full_f6ce0597695a878c4663.jpg",
         "medium": "http://example.com/uploads/images/thumb_medium_f6ce0597695a878c4663.jpg",
         "small": "http://example.com/uploads/images/thumb_small_f6ce0597695a878c4663.jpg"
@@ -82,6 +84,7 @@ One or more photos can be attached to a post. Images are provided in multiple re
         "width": 1600
       },
       "sizes": {
+        "raw": "http://example.com/uploads/images/c384f99eda7f19dfe78c.jpg",
         "large": "http://example.com/uploads/images/scaled_full_c384f99eda7f19dfe78c.jpg",
         "medium": "http://example.com/uploads/images/thumb_medium_c384f99eda7f19dfe78c.jpg",
         "small": "http://example.com/uploads/images/thumb_small_c384f99eda7f19dfe78c.jpg"
