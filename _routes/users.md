@@ -254,6 +254,7 @@ GET /api/v1/users/:person_guid/photos
       "width": 1600
     },
     "sizes": {
+      "raw": "http://example.com/uploads/images/f6ce0597695a878c4663.jpg",
       "large": "http://example.com/uploads/images/scaled_full_f6ce0597695a878c4663.jpg",
       "medium": "http://example.com/uploads/images/thumb_medium_f6ce0597695a878c4663.jpg",
       "small": "http://example.com/uploads/images/thumb_small_f6ce0597695a878c4663.jpg"
@@ -268,6 +269,7 @@ GET /api/v1/users/:person_guid/photos
       "width": 1600
     },
     "sizes": {
+      "raw": "http://example.com/uploads/images/c384f99eda7f19dfe78c.jpg",
       "large": "http://example.com/uploads/images/scaled_full_c384f99eda7f19dfe78c.jpg",
       "medium": "http://example.com/uploads/images/thumb_medium_c384f99eda7f19dfe78c.jpg",
       "small": "http://example.com/uploads/images/thumb_small_c384f99eda7f19dfe78c.jpg"
