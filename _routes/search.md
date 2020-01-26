@@ -91,6 +91,11 @@ GET /api/v1/search/posts
       "comments": 14,
       "likes": 42,
       "reshares": 9
+    },
+    "own_interaction_state": {
+      "liked": false,
+      "reshated": false,
+      "subscribed": false
     }
   },
   {
@@ -111,6 +116,11 @@ GET /api/v1/search/posts
       "comments": 14,
       "likes": 42,
       "reshares": 9
+    },
+    "own_interaction_state": {
+      "liked": false,
+      "reshated": false,
+      "subscribed": false
     }
   }
 ]
