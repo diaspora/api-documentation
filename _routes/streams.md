@@ -42,6 +42,11 @@ GET /api/v1/streams/main
       "comments": 3,
       "likes": 1,
       "reshares": 0
+    },
+    "own_interaction_state": {
+      "liked": false,
+      "reshated": false,
+      "subscribed": false
     }
   },
   {
@@ -62,6 +67,11 @@ GET /api/v1/streams/main
       "comments": 14,
       "likes": 42,
       "reshares": 9
+    },
+    "own_interaction_state": {
+      "liked": false,
+      "reshated": false,
+      "subscribed": false
     }
   }
 ]

@@ -85,6 +85,11 @@ POST /api/v1/posts/:post_guid/reshares
     "comments": 0,
     "likes": 0,
     "reshares": 0
+  },
+  "own_interaction_state": {
+    "liked": false,
+    "reshated": false,
+    "subscribed": false
   }
 }
 ~~~
