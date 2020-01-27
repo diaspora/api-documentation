@@ -52,6 +52,8 @@ Mentioned people will be included in a separate array for advanced displaying. A
 }
 ~~~
 
+The mention syntax in the post body above is the primary form you will see, but there's also a deprecated variant to it in the form of `@{Bobby; bob@example.com}`. The part of before the semicolon (`;`) may used as display text for the mention, while the optional `name` from the entry in in `mentioned_people` matching the diaspora ID after the semicolon should be used instead if available.
+
 ### Photos
 
 One or more photos can be attached to a post. Images are provided in multiple resolutions, so bandwidth usage can be optimized.
