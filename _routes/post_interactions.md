@@ -35,6 +35,12 @@ POST /api/v1/posts/:post_guid/report
 Status: 204 No Content
 ~~~
 
+### Errors
+
+| Status code | Error reason                               |
+| ----------- | ------------------------------------------ |
+| 409         | Post has already been reported             |
+
 ## Subscribe to a post
 
 The current user will receive notifications for subscribed posts without adding a like or comment.

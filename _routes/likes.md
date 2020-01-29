@@ -67,7 +67,7 @@ Status: 204 No Content
 | ----------- | ------------------------------------------ |
 | 404         | Post with provided guid could not be found |
 | 422         | User is not allowed to like                |
-| 422         | Like already exists                        |
+| 409         | Like already exists                        |
 
 ## Unlike a post
 
@@ -90,4 +90,4 @@ Status: 204 No Content
 | Status code | Error reason                               |
 | ----------- | ------------------------------------------ |
 | 404         | Post with provided guid could not be found |
-| 404         | Like doesn't exist                         |
+| 410         | Like doesn't exist                         |
