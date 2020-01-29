@@ -88,3 +88,11 @@ POST /api/v1/posts/:post_guid/reshares
   }
 }
 ~~~
+
+### Errors
+
+| Status code | Error reason                               |
+| ----------- | ------------------------------------------ |
+| 404         | Post with provided guid could not be found |
+| 422         | User is not allowed to reshare             |
+| 409         | Reshare already exists                     |

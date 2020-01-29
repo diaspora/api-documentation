@@ -73,7 +73,7 @@ Status: 204 No Content
 | ----------- | --------------------------------------------- |
 | 403         | User not allowed to delete the comment        |
 | 404         | Post with provided guid could not be found    |
-| 404         | Comment not found for the given post          |
+| 410         | Comment not found for the given post          |
 
 ## Report a comment
 

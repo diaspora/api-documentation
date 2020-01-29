@@ -51,6 +51,12 @@ POST /api/v1/tag_followings
 Status: 204 No Content
 ~~~
 
+### Errors
+
+| Status code | Error reason             |
+| ----------- |------------------------- |
+| 409         | Tag was already followed |
+
 ## Unfollow a tag
 
 Required API scope: `tags:modify`
@@ -66,3 +72,9 @@ DELETE /api/v1/tag_followings/:tag_name
 ~~~
 Status: 204 No Content
 ~~~
+
+### Errors
+
+| Status code | Error reason         |
+| ----------- |--------------------- |
+| 410         | Tag was not followed |
