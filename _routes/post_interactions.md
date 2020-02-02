@@ -134,6 +134,39 @@ Status: 204 No Content
 | 410         | Post is not hidden                         |
 | 422         | Request invalid                            |
 
+## Vote on poll
+
+Record a vote on a poll embedded into a post.
+
+~~~
+POST /api/v1/posts/:post_guid/vote
+~~~
+~~~json
+{
+  "poll_answer": 3
+}
+~~~
+
+### Parameters
+
+| Name        | Type    | Description                                                     |
+| ----------- | ------- | --------------------------------------------------------------- |
+| poll_answer | integer | The id of the answer for which the vote should be recorded for. |
+
+### Response
+
+~~~
+Status: 204 No Content
+~~~
+
+### Errors
+
+| Status code | Error reason                                       |
+| ----------- | -------------------------------------------------- |
+| 404         | Post with provided guid could not be found         |
+| 410         | There already was a vote recorded for this poll    |
+| 422         | The request was invalid, such as a wrong id given  |
+
 [comments]: {{ site.baseurl }}/routes/comments.html
 [likes]: {{ site.baseurl }}/routes/likes.html
 [reshares]: {{ site.baseurl }}/routes/reshares.html
