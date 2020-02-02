@@ -164,6 +164,31 @@ The first link in a post is checked for any OpenGraph metadata. If any is found,
 
 `video_url` is validated against a list of secure providers and as such should be fine to be used as an `<iframe>` source.
 
+### oEmbed
+
+The first link in a post is checked against a list of secure oEmbed providers. If there's any match, the oEmbed metadata is fetched and returned in `oembed`. Below is only an example, any fields as described in section 2.3.4 of the [oEmbed specification](https://oembed.com/) can be included. The additional field `trusted_endpoint_url` gives the endpoint the data was retrieved from.
+
+~~~json
+{
+  "oembed": {
+    "type": "video",
+    "thumbnail_url": "https://i.ytimg.com/vi/hHW1oY26kxQ/hqdefault.jpg",
+    "thumbnail_height": 360,
+    "provider_url": "https://www.youtube.com/",
+    "provider_name": "YouTube",
+    "width": 420,
+    "title": "lofi hip hop radio - beats to relax/study to",
+    "thumbnail_width": 480,
+    "author_url": "https://www.youtube.com/channel/UCSJ4gkVC6NrvII8umztf0Ow",
+    "html": "<iframe width=\"420\" height=\"236\" src=\"https://www.youtube.com/embed/hHW1oY26kxQ?feature=oembed\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+    "version": "1.0",
+    "height": 236,
+    "author_name": "ChilledCow",
+    "trusted_endpoint_url": "https://www.youtube.com/oembed?scheme=https"
+  }
+}
+~~~
+
 ## Get information about a single post
 
 Please note that this is a very simple post. See above for additional fields that could be included in this response object.
