@@ -102,24 +102,27 @@ One poll with two or more questions can be attached to a post. A user can partic
 {
   "poll": {
     "guid": "83d4a140b9b20133e40c406c8f31e210",
-    "participation_count": 1,
+    "participation_count": 2,
     "already_participated": true,
     "question": "Want to vote on a poll?",
     "poll_answers": [
       {
         "id": 3,
         "answer": "Yes!",
-        "vote_count": 0
+        "vote_count": 0,
+        "own_answer": false
       },
       {
         "id": 4,
         "answer": "Sure!",
-        "vote_count": 0
+        "vote_count": 1,
+        "own_answer": false
       },
       {
         "id": 5,
         "answer": "Hell yeah!",
-        "vote_count": 1
+        "vote_count": 1,
+        "own_answer": true
       }
     ]
   }
