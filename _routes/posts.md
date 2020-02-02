@@ -140,6 +140,25 @@ A location can be added to a post. In addition to the visible `address`, the geo
 }
 ~~~
 
+### Open Graph metadata
+
+The first link in a post is checked for any OpenGraph metadata. If any is found, it's returned in `open_graph_object`. Note only the most useful fields of all possible OpenGraph metadata is returned.
+
+~~~json
+{
+  "open_graph_object": {
+    "title": "Chillhop Essentials Winter 2019, by Chillhop Music",
+    "type": "album",
+    "image": "https://f4.bcbits.com/img/a1333510142_5.jpg",
+    "description": "24 track album",
+    "url": "https://chillhop.bandcamp.com/album/chillhop-essentials-winter-2019",
+    "video_url": "https://bandcamp.com/EmbeddedPlayer/v=2/album=434373916/size=large/tracklist=false/artwork=small/"
+  }
+}
+~~~
+
+`video_url` is validated against a list of secure providers and as such should be fine to be used as an `<iframe>` source.
+
 ## Get information about a single post
 
 Please note that this is a very simple post. See above for additional fields that could be included in this response object.
