@@ -39,7 +39,9 @@ Status: 204 No Content
 
 | Status code | Error reason                               |
 | ----------- | ------------------------------------------ |
+| 404         | Post with provided guid could not be found |
 | 409         | Post has already been reported             |
+| 422         | Request invalid, such as a missing reason  |
 
 ## Subscribe to a post
 
@@ -59,7 +61,16 @@ POST /api/v1/posts/:post_guid/subscribe
 Status: 204 No Content
 ~~~
 
-## Mute or unmute a post
+### Errors
+
+| Status code | Error reason                               |
+| ----------- | ------------------------------------------ |
+| 404         | Post with provided guid could not be found |
+| 409         | Already subscribed                         |
+| 422         | Request invalid                            |
+
+
+## Mute (unsubscribe from a) a post
 
 The current user will not receive any notifications for this post, even if a comment or like was added.
 
@@ -70,23 +81,20 @@ Required API scope: `interactions`. Read access to the post must be present too 
 ~~~
 POST /api/v1/posts/:post_guid/mute
 ~~~
-~~~json
-{
-  "mute": true
-}
-~~~
-
-### Parameters
-
-| Name | Type    | Description                              |
-| ---- | ------- | ---------------------------------------- |
-| mute | boolean | Whether the post should be muted or not. |
 
 ### Response
 
 ~~~
 Status: 204 No Content
 ~~~
+
+### Errors
+
+| Status code | Error reason                               |
+| ----------- | ------------------------------------------ |
+| 404         | Post with provided guid could not be found |
+| 410         | Was not subscribed to this post            |
+| 422         | Request invalid                            |
 
 ## Hide or unhide a post
 
@@ -116,6 +124,15 @@ POST /api/v1/posts/:post_guid/hide
 ~~~
 Status: 204 No Content
 ~~~
+
+### Errors
+
+| Status code | Error reason                               |
+| ----------- | ------------------------------------------ |
+| 404         | Post with provided guid could not be found |
+| 409         | Post is already hidden                     |
+| 410         | Post is not hidden                         |
+| 422         | Request invalid                            |
 
 [comments]: {{ site.baseurl }}/routes/comments.html
 [likes]: {{ site.baseurl }}/routes/likes.html
