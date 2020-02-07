@@ -227,7 +227,8 @@ GET /api/v1/posts/:post_guid
   "own_interaction_state": {
     "liked": false,
     "reshated": false,
-    "subscribed": false
+    "subscribed": false,
+    "reported": false
   }
 }
 ~~~
