@@ -28,7 +28,8 @@ GET /api/v1/posts/:post_guid/comments
       "avatar": "http://example.com/uploads/images/thumb_medium_83abe5319ef830c2bd84.jpg"
     },
     "body": "What a wonderful post!",
-    "mentioned_people": []
+    "mentioned_people": [],
+    "reported": false
   },
   {
     "guid": "9d164700b82f0133e40d406c8f31e210",
@@ -46,8 +47,9 @@ GET /api/v1/posts/:post_guid/comments
         "diaspora_id": "alice@example.com",
         "name": "Alice Testing",
         "avatar": "http://example.com/uploads/images/thumb_medium_83abe5319ef830c2bd84.jpg"
-      }
-    ]
+      },
+    ],
+    "reported": false
   }
 ]
 ~~~
