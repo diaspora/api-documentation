@@ -6,16 +6,20 @@ title: Notifications
 
 **Possible notification types**:
 
-| Type              | Description                                                     |
-| ----------------- | --------------------------------------------------------------- |
-| also_commented    | Someone commented on a post the current user also commented on. |
-| commented_on_post | Someone commented on a post the current user created.           |
-| liked             | Someone liked a post the current user created.                  |
-| mentioned         | Someone mentioned the current user in a post.                   |
-| reshared          | Someone reshared one of the current user's posts.               |
-| started_sharing   | Someone started sharing with the current user.                  |
+| Type                 | Description                                                     |
+| -------------------- | --------------------------------------------------------------- |
+| also_commented       | Someone commented on a post the current user also commented on. |
+| commented_on_post    | Someone commented on a post the current user created.           |
+| liked                | Someone liked a post the current user created.                  |
+| mentioned            | Someone mentioned the current user in a post.                   |
+| mentioned_in_comment | Someone mentioned the current user in a comment of a post.      |
+| reshared             | Someone reshared one of the current user's posts.               |
+| started_sharing      | Someone started sharing with the current user.                  |
+| contacts_birthday    | Someone in the contacts of the current user has their birthday. |
 
-"Someone" is defined in `event_creators` which represents one or more user profiles. All types, excluding `started_sharing` will include a `target_guid` (in the list route) or `target` (in the single-notification route) identifying the post the event was created at.
+"Someone" is defined in `event_creators` which represents one or more user profiles. All types, excluding `started_sharing` and `contacts_birthday` will include a `target` identifying the post the event was created at.
+The `target` will always be the related post object, so for `mentioned_in_comment` the post the comment was
+created on, for `liked` the post that was liked and so on.
 
 ## Get list of all notifications
 
@@ -56,9 +60,17 @@ GET /api/v1/notifications
   {
     "guid": "df6e8a20b8e70133e40d406c8f31e210",
     "type": "also_commented",
-    "target_guid": "e0a33450b8e70133e40d406c8f31e210",
     "read": false,
     "created_at": "2016-02-19T03:41:25.284Z",
+    "target": {
+      "guid": "e0a33450b8e70133e40d406c8f31e210",
+      "author": {
+        "guid": "19103170b8cc0133e40d406c8f31e210",
+        "diaspora_id": "carol@example.com",
+        "name": "Carol Testing",
+        "avatar": "http://example.com/uploads/images/thumb_medium_2e1bc500b8cc0133e40d.jpg"
+      }
+    },
     "event_creators": [
       {
         "guid": "f50ffc00b188013355e3705681972339",
