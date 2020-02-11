@@ -62,7 +62,7 @@ Optional API scope: `private:read`
 GET /api/v1/search/posts
 ~~~
 
-### Parameters (one required)
+### Parameters (required)
 
 | Name | Type   | Description                         |
 | ---- | ------ | ----------------------------------- |
@@ -123,5 +123,35 @@ GET /api/v1/search/posts
       "subscribed": false
     }
   }
+]
+~~~
+
+## Search for tags
+
+Do a prefix search through all the tags the pod knows.
+
+Required API scope: `public:read`
+
+### Request
+
+~~~
+GET /api/v1/search/tags
+~~~
+
+### Parameters (required)
+
+| Name   | Type   | Description                           |
+| ------ | ------ | ------------------------------------- |
+| query  | string | A string the tags have to start with. |
+
+### Response
+
+~~~json
+[
+  "photo",
+  "photos",
+  "photograph",
+  "photographs",
+  "photographic"
 ]
 ~~~
