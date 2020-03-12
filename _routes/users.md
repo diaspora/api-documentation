@@ -293,3 +293,49 @@ GET /api/v1/users/:person_guid/photos
 | Status code | Error reason                               |
 | ----------- | ------------------------------------------ |
 | 404         | User with provided guid could not be found |
+
+## Block a user
+
+Required API scope: `contacts:modify`.
+
+### Request
+
+~~~
+POST /api/v1/users/:person_guid/block
+~~~
+
+### Response
+
+~~~
+Status: 201 Created
+~~~
+
+### Errors
+
+| Status code | Error reason                               |
+| ----------- | ------------------------------------------ |
+| 404         | User with provided guid could not be found |
+| 409         | Block already exists                       |
+
+## Unblock a user
+
+Required API scope: `contacts:modify`.
+
+### Request
+
+~~~
+DELETE /api/v1/users/:person_guid/block
+~~~
+
+### Response
+
+~~~
+Status: 204 No Content
+~~~
+
+### Errors
+
+| Status code | Error reason                               |
+| ----------- | ------------------------------------------ |
+| 404         | User with provided guid could not be found |
+| 410         | Block doesn't exist                        |
