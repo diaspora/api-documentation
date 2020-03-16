@@ -22,12 +22,32 @@ Optional API scope: `contacts:read`
 GET /api/v1/search/users
 ~~~
 
-### Parameters (one required)
+### Parameters
+
+## Query (one required, exclusive)
 
 | Name           | Type   | Description                                       |
 | -------------- | ------ | ------------------------------------------------- |
 | name_or_handle | string | Part or entire profile name or diaspora\* handle. |
 | tag            | string | A tag that the person is tagged with.             |
+
+#### Filter
+
+The `filter` parameter can be given zero or more times. Each one narrows down the
+search result, in other words multiple `filter` parameters are joined with a logical and.
+
+The possible values are:
+
+* `contacts`: Limits the results to the currently authenticated user's contacts. Requires the `contacts:read` scope.
+* `contacts:receiving`: Limits the results to the currently authenticated user's contacts that the user is sharing with. Requires the `contacts:read` scope.
+* `contacts:sharing`: Limits the results to the currently authenticated user's contacts that are sharing with the user. Requires the `contacts:read` scope.
+* `aspect:aspect_id,aspect_id,...`: For example `aspect:123` or `aspect:123,567`. Limits the results to users that are in either of the given aspects. Requires the `contacts:read` scope.
+
+Examples:
+
+* `filter[]=contacts:receiving&filter[]=contacts:sharing`: Only return users that have a mutal sharing status with the current user.
+* `filter=aspect:123,567`: Only return users that are either in aspect `123` or in aspect `567` (or in both).
+* `filter[]=aspect:123&filter[]=aspect:567`: Only return users that in both, aspect `123` and `567`.
 
 ### Response
 
