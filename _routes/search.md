@@ -24,7 +24,7 @@ GET /api/v1/search/users
 
 ### Parameters
 
-## Query (one required, exclusive)
+#### Query (one required, exclusive)
 
 | Name           | Type   | Description                                       |
 | -------------- | ------ | ------------------------------------------------- |
