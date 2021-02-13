@@ -199,8 +199,6 @@ Status: 204 No Content
 
 ## List messages in a conversation
 
-*Note*: This also marks the given conversation as read.
-
 Required API scope: `conversations`
 
 ### Request
@@ -251,6 +249,80 @@ GET /api/v1/conversations/:conversation_guid/messages
       "name": "Alice Testing",
       "avatar": "http://example.com/uploads/images/thumb_medium_83abe5319ef830c2bd84.jpg"
     }
+  }
+]
+~~~
+
+### Errors
+
+| Status code | Error reason                                       |
+| ----------- | -------------------------------------------------- |
+| 404         | Conversation with provided guid could not be found |
+
+## Mark a conversation as read
+
+Required API scope: `conversations`
+
+### Request
+
+~~~
+PATCH /api/v1/conversations/:conversation_guid
+~~~
+~~~json
+{
+  "read": true
+}
+~~~
+
+### Response
+
+~~~json
+[
+  {
+    "guid": "3ffe3620b89b0133e40c406c8f31e210",
+    "subject": "Look, I found a kitten",
+    "created_at": "2016-02-18T18:27:54.554Z",
+    "read": true,
+    "participants": [
+      {
+        "guid": "f50ffc00b188013355e3705681972339",
+        "diaspora_id": "alice@example.com",
+        "name": "Alice Testing",
+        "avatar": "http://example.com/uploads/images/thumb_medium_83abe5319ef830c2bd84.jpg"
+      },
+      {
+        "guid": "cb7e4aa0b82f0133e40d406c8f31e210",
+        "diaspora_id": "bob@example.com",
+        "name": "Bob Testing",
+        "avatar": "http://example.com/uploads/images/thumb_medium_a51bf501fe86c198c0b1.jpg"
+      }
+    ]
+  },
+  {
+    "guid": "59804e90b8cc0133e40d406c8f31e210",
+    "subject": "Our meeting tomorrow",
+    "created_at": "2016-02-19T00:19:35.154Z",
+    "read": true,
+    "participants": [
+      {
+        "guid": "f50ffc00b188013355e3705681972339",
+        "diaspora_id": "alice@example.com",
+        "name": "Alice Testing",
+        "avatar": "http://example.com/uploads/images/thumb_medium_83abe5319ef830c2bd84.jpg"
+      },
+      {
+        "guid": "19103170b8cc0133e40d406c8f31e210",
+        "diaspora_id": "carol@example.com",
+        "name": "Carol Testing",
+        "avatar": "http://example.com/uploads/images/thumb_medium_2e1bc500b8cc0133e40d.jpg"
+      },
+      {
+        "guid": "83de2fc0b8cc0133e40d406c8f31e210",
+        "diaspora_id": "trent@example.com",
+        "name": "Trent Testing",
+        "avatar": "http://example.com/uploads/images/thumb_medium_8894c7a0b8cc0133e40d.jpg"
+      }
+    ]
   }
 ]
 ~~~
