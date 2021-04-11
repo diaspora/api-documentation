@@ -32,7 +32,7 @@ GET /api/v1/posts/:post_guid/comments
     "interactions": {
       "likes": [],
       "likes_count": 0
-    }
+    },
     "reported": false
   },
   {
