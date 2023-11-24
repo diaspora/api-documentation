@@ -30,7 +30,7 @@ GET /api/v1/posts/:post_guid/comments
     "body": "What a wonderful post!",
     "mentioned_people": [],
     "interactions": {
-      "likes": [],
+      "liked": false,
       "likes_count": 0
     },
     "reported": false
@@ -54,20 +54,7 @@ GET /api/v1/posts/:post_guid/comments
       },
     ],
     "interactions": {
-      "likes": [
-        {
-          "id": 93,
-          "guid": "581caae04ec90139164a2cde48001122",
-          "author": {
-            "id": 7,
-            "guid": "158d9e304884013914942cde48001122",
-            "name": "Melory",
-            "diaspora_id": "melory@example.com",
-            "avatar": "http://example.com/uploads/images/thumb_medium_83abe5319ef830c2bd84.jpg"
-          },
-          "created_at": "2021-02-11T19:00:34.652Z"
-        }
-      ],
+      "liked": true,
       "likes_count":  1
     },
     "reported": false
