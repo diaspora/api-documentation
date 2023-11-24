@@ -11,6 +11,7 @@ title: Notifications
 | also_commented       | Someone commented on a post the current user also commented on. |
 | commented_on_post    | Someone commented on a post the current user created.           |
 | liked                | Someone liked a post the current user created.                  |
+| liked_comment        | Someone liked a comment the current user created.               |
 | mentioned            | Someone mentioned the current user in a post.                   |
 | mentioned_in_comment | Someone mentioned the current user in a comment of a post.      |
 | reshared             | Someone reshared one of the current user's posts.               |
@@ -19,7 +20,7 @@ title: Notifications
 
 "Someone" is defined in `event_creators` which represents one or more user profiles. All types, excluding `started_sharing` and `contacts_birthday` will include a `target` identifying the post the event was created at.
 The `target` will always be the related post object, so for `mentioned_in_comment` the post the comment was
-created on, for `liked` the post that was liked and so on.
+created on, for `liked` the post that was liked, for 'liked_comment' the post the liked comment was created on and so on.
 
 ## Get list of all notifications
 
