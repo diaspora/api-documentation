@@ -29,6 +29,10 @@ GET /api/v1/posts/:post_guid/comments
     },
     "body": "What a wonderful post!",
     "mentioned_people": [],
+    "interactions": {
+      "liked": false,
+      "likes_count": 0
+    },
     "reported": false
   },
   {
@@ -49,6 +53,10 @@ GET /api/v1/posts/:post_guid/comments
         "avatar": "http://example.com/uploads/images/thumb_medium_83abe5319ef830c2bd84.jpg"
       },
     ],
+    "interactions": {
+      "liked": true,
+      "likes_count":  1
+    },
     "reported": false
   }
 ]
